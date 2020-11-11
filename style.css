@@ -34,7 +34,7 @@
 }
 
 #fire {
-    background-color: rgba(228, 49, 49, 0.822);
+    background-color: red;
     border-radius: 20px;
     color: white;
     font-size: 25px;
@@ -44,7 +44,7 @@
 }
 
 #water {
-    background-color: rgba(49, 127, 228, 0.822);
+    background-color: blue;
     border-radius: 20px;
     color: white;
     font-size: 25px;
@@ -54,7 +54,7 @@
 }
 
 #earth {
-    background-color: rgba(136, 228, 49, 0.822);
+    background-color: green;
     border-radius: 20px;
     color: white;
     font-size: 25px;
