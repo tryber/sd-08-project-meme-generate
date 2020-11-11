@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 25px;
+}
+
+.options-container {
+  margin-bottom: 25px;
+}
+
+.general-container {
+  width: 800px;
+  margin: auto;
+}
+
+.text-input {
+  display: inline-block;
+}
+
+.meme-image-container {
+  border: 1px solid black;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  background-color: white;
+}
+
+.meme-text {
+  position: absolute;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
