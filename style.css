@@ -31,6 +31,13 @@ header {
 
 .meme-text {
   position: absolute;
+  z-index: 1;
+  width:500px;
+  height: 500px;
+  vertical-align: middle;
+  font-size: 30px;
+  text-shadow: 5px 5px 5px black;
+  color: white;
 }
 
 .img {
