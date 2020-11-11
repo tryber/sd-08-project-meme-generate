@@ -48,6 +48,7 @@ input#file-upload-button {
   width: 450px;
   margin-top: 30px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 img {
@@ -72,4 +73,53 @@ img {
   position: absolute;
   height: 450px;
   width: 450px;
+}
+
+#botoesBordaDiv {
+  margin-bottom: 30px;
+}
+
+#fire {
+  background-color: red;
+}
+#water {
+  background-color: blue;
+}
+#earth {
+  background-color: green;
+}
+
+.botoesBorda {
+  border: 0;
+  padding: 20px;
+  width: 140px;
+  font-size: 1.1em;
+  color: white;
+  box-shadow: 3px 3px black;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.botoesBorda:focus {
+  outline: none;
+}
+
+#fire:hover {
+  background-color: lightcoral;
+}
+#water:hover {
+  background-color: lightskyblue;
+}
+#earth:hover {
+  background-color: lightgreen;
+}
+
+.preLoadedMemes,
+.preLoadedMemes img {
+  width: 120px;
+  height: 120px;
+  float: left;
+  cursor: pointer;
+}
+.preLoadedMemes:hover {
+  border: 2px solid black;
 }
