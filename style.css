@@ -1,6 +1,6 @@
 #meme-image-container {
     position: relative;
-    max-width: 200px;
+    max-width: 600px;
     border: 1px solid black;
     background-color: white;
 }
