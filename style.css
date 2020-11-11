@@ -9,21 +9,23 @@
 
 #meme-image {
     height: 100%;
-    position: relative;
+    
     width: 100%;
 }
 
 #meme-image-container {
     background-color: white;
     border: 1px solid black;
-    display: inline-block;
     height: 400px;
+    overflow: hidden;
+    position: relative;
     width: 400px;
 }
 
 #meme-text {
-    bottom: 150px;
-    font-size: 70px;
+    bottom: 0px;
+    color: white;
+    font-size: 30px;
     position: absolute;
-    
+    text-shadow: 5px 5px 5px black;
 }
