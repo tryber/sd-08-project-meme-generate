@@ -14,3 +14,14 @@ function imgToMeme() {
 }
 
 insertImg.addEventListener('change', imgToMeme);
+
+const btnsBorders = ['fire', 'water', 'earth'];
+const borders = ['3px dashed red', '5px double blue', '6px groove green'];
+const container = document.getElementById('meme-image-container');
+
+for (let pos = 0; pos < btnsBorders.length; pos += 1) {
+  let btn = document.getElementById(btnsBorders[pos]);
+  btn.addEventListener('click', function () {
+    container.style.border = borders[pos];
+  });
+}
