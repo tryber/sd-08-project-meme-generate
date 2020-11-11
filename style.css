@@ -30,3 +30,15 @@
     height: 500px;
     
 }
+
+#fire {
+    background:rgb(255, 0, 0);
+}
+
+#water {
+    background:rgb(0, 0, 255);
+}
+
+#earth {
+    background: rgb(0, 128, 0); 
+}
