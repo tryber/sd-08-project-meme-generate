@@ -1,4 +1,4 @@
-.meme-container {
+#meme-image-container {
   background-color: white;
   border: 1px solid black;
   max-width: max-content;
@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.meme-container span {
+#meme-image-container span {
   color: white;
   font-size: 30px;
   height: 100%;
@@ -16,6 +16,6 @@
   top: 60%;
   width: 100%;
 }
-.meme-container img {
+#meme-image-container img {
   display: block;
 }
