@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+}
+.meme-image-container {
+  background-color: white;
+  border: 1px solid black;
+  height: 400px;
+  margin: auto;
+  position: relative;
+  width: 400px;
+}
+  
+.meme-image {
+  height: 400px;
+  width: 400px;
+}
+  
+.meme-text {
+  bottom: 20px;
+  color: white;
+  font-size: 30px;
+  margin: 10px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  font-family: Luckiest Guy;
+}
+
+header {
+  background-image: url(/sapomeme.jpg);
+  color: white;
+  height: 100px;
+  background-size: 200vmax;
+  background-position: top;
+  text-align: center;
+}
+
+main {
+    background-image: url(/qe5VbA.jpg);
+    text-align: center;
+    padding: 23px;
+}
+
+.meme-insert {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.text-input {
+  width: 390px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  
+}
+
+.title {
+    position: relative;
+    font-family: Luckiest Guy;
+    font-size: 80px;
+    top: 30px;
+}
+
+.button-container {
+    position: relative;
+   bottom: 350px;
+   left: 150px;
+   width: 150px;
+}
+
+.fire, .water, .earth {
+    display: block;
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: Luckiest Guy;
+    padding-top: 5px;
+}
+
+.fire {
+    background-color: red;
+}
+.water {
+    background-color: blue;
+}
+.earth {
+    background-color: green;
+}
+.border {
+    color: white;
+    font-family: Luckiest Guy;
+    text-shadow: 2px 2px 1px black;
+    font-size: 30px;
+    background-color: brown;
+    padding-top: 10px;
+}
+
+/* classes para novas bordas */
+.border-fire {
+    background-color: white;
+    border: 3px dashed red;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    width: 400px;
+  }
+  .border-water {
+    background-color: white;
+    border: 5px double blue;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    width: 400px;
+  }
+  .border-earth {
+    background-color: white;
+    border: 6px groove green;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    width: 400px;
+  }
+
+.meme-1, .meme-2, .meme-3, .meme-4 {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.img-container {
+  width: 210px ;
+  position: relative;
+  bottom: 600px;
+  left: 1000px;
+  background-color:white;
+}
