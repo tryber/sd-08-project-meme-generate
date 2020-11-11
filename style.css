@@ -1,19 +1,21 @@
 .meme-container {
   background-color: white;
   border: 1px solid black;
+  max-width: max-content;
   overflow-wrap: break-word;
-  position: absolute;
+  position: relative;
 }
 
 .meme-container span {
   color: white;
   font-size: 30px;
+  height: 100%;
   position: absolute;
   text-shadow: 5px 5px 5px black;
-  z-index: 1;
+  text-align: center;
+  top: 60%;
+  width: 100%;
 }
 .meme-container img {
   display: block;
-  position: relative;
-  z-index: 0;
 }
