@@ -15,7 +15,7 @@ window.onload = function () {
 };
 
 function adicionarImagem(source) {
-  let imgDiv = document.querySelector("#meme-image-img");
+  let imgDiv = document.querySelector("#meme-image");
   imgDiv.src = source;
 }
 
@@ -26,7 +26,7 @@ function atualizarTexto() {
 }
 
 function readURL(input) {
-  var imgDiv = document.querySelector("#meme-image-img");
+  var imgDiv = document.querySelector("#meme-image");
   var spanBtn = document.querySelector(".spanBotao");
   if (input.files && input.files[0]) {
     var reader = new FileReader();
