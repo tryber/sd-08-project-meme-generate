@@ -28,3 +28,37 @@
     position: absolute;
     text-shadow: 5px 5px 5px black;
 }
+
+#buttons {
+    padding-left: 50px;
+}
+
+#fire {
+    background-color: rgba(228, 49, 49, 0.822);
+    border-radius: 20px;
+    color: white;
+    font-size: 25px;
+    height: 70px;
+    margin-right: 30px;
+    width: 100px;
+}
+
+#water {
+    background-color: rgba(49, 127, 228, 0.822);
+    border-radius: 20px;
+    color: white;
+    font-size: 25px;
+    height: 70px;
+    width: 100px;
+    margin-right: 30px;
+}
+
+#earth {
+    background-color: rgba(136, 228, 49, 0.822);
+    border-radius: 20px;
+    color: white;
+    font-size: 25px;
+    height: 70px;
+    width: 100px;
+    margin-right: 30px;
+}
