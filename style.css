@@ -6,6 +6,11 @@
 
 #meme-text {
     position: absolute;
+    width: max-content;
     font-size: 30px;
-    color: white;
+    color: black;
+}
+
+#meme-image {
+    position: relative;
 }
