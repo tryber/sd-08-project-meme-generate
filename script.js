@@ -1,23 +1,25 @@
-function addText(){
+function addText() {
   let userText = document.getElementById('text-input');
-  userText.addEventListener('keypress', function (event){
+  userText.addEventListener('keypress', function (event) {
     let imgText = document.getElementById('meme-text');
     imgText.innerText = event.target.value;
   })  
 }
 addText();
 
-
-/*function uploadImage() {  
+function uploadImage(){
   let input = document.getElementById('submit-file');
-  input.addEventListener('change', function (event){
-    let board = document.getElementById('meme-image-container');    
-    appendFiles(event.target.files);
-    let img = document.createElement('img');
-    img.src = input.files[0];
-    board.appendChild(img);
+  input.addEventListener('change', function(event){
+    let reader = new FileReader();
+    reader.onload = function () {
+      let img = new Image();
+      img.src = reader.result;
+      img.className = 'meme-pic';
+      let imgContainer = document.getElementById('meme-image-container');
+      imgContainer.appendChild(img);
+    }
+    reader.readAsDataURL(input.files[0]);
   })
 }
-uploadImage();
-//função criada com elementos retirados desse artigo: https://braziljs.org/artigos/1001-formas-de-fazer-input-de-arquivos-com-javascript/
-*/
+uploadImage()
+// função criada de acordo com esse video: https://www.youtube.com/watch?v=-AR-6X_98rM
