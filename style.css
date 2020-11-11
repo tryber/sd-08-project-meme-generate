@@ -2,14 +2,9 @@ body {
   box-sizing: border-box;
 }
 
-.container-section {
-  background-color: black;
-  color: white;
-  height: 400px;
-  width: 400px;
-}
-
 .container {
+  background-color: white;
+  border: 1px solid black;
   height: 400px;
   margin: 0;
   padding: 0;
@@ -18,6 +13,7 @@ body {
 }
 
 .container span {
+  color: white;
   position: absolute;
   text-align: center;
   top: 80%;
@@ -25,6 +21,7 @@ body {
 }
 
 .container img {
+  color: black;
   height: 400px;
   margin: 0;
   padding: 0;
