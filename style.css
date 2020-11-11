@@ -1,12 +1,12 @@
 .title {
   background-color: rgb(96, 32, 64);
-  margin: 0 0 15px 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
   color: white;
+  margin: 0 0 15px 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
 }
 
 body {
@@ -14,8 +14,8 @@ body {
 }
 
 .main-content {
-  margin-top: 100px;
   margin-left: 20%;
+  margin-top: 100px;
 }
 
 .container {
@@ -78,7 +78,7 @@ button {
 }
 
 .imagens-memes-protos {
-  margin-right: 15px;
   height: 100px;
+  margin-right: 15px;
   width: 100px;
 }
