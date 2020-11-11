@@ -1,6 +1,52 @@
 .meme-image-container {
-    border: solid black 1px;
-    height: 400px;
-    width: 400px;
+  background-color: white;
+  border: 1px solid black;
+  height: 400px;
+  margin: auto;
+  position: relative;
+  width: 400px;
+}
+  
+.meme-image {
+  height: 400px;
+  width: 400px;
+}
+  
+.meme-text {
+  bottom: 1px;
+  color: white;
+  font-size: 50px;
+  margin: 10px;
+  position: absolute;
+  text-align: left;
+  text-shadow: 5px 5px 5px black;
 }
 
+header {
+  background-image: url(/sapomeme.jpg);
+  color: white;
+  height: 100px;
+  background-size: 200vmax;
+  background-position: top;
+  text-align: center;
+}
+
+main {
+    background-image: url(/qe5VbA.jpg);
+    text-align: center;
+    padding: 23px;
+}
+
+.meme-insert {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.text-input {
+  width: 390px;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  
+}
