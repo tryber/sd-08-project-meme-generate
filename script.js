@@ -30,7 +30,7 @@ window.onload = function() {
 
     addEventListener('click', function(event) {
         let imagem = event.target;
-        if (imagem.className == 'meme-pronto') {
+        if (imagem.id == 'meme-1' || imagem.id == 'meme-2' || imagem.id == 'meme-3' || imagem.id == 'meme-4') {
             memeImage.src = imagem.src;
         }
     })
