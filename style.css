@@ -26,6 +26,9 @@
 button {
     color: white;
     font-weight: 700;
+    margin-right: 30px;
+    padding: 5px 30px;
+
 }
 
 .fire {
@@ -38,4 +41,18 @@ button {
 
 .earth {
     background-color: green;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.imgs-memes{
+    margin-top: 20px;
+}
+
+.imagens-memes-protos {
+    margin-right: 15px;
+    height: 100px;
+    width: 100px;
 }
