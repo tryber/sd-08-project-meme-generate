@@ -1,0 +1,26 @@
+#meme-insert {
+    padding-left: 15px;
+}
+
+#text-input {
+    margin-bottom: 15px;
+    margin-left: 8px;
+}
+
+#meme-image {
+    height: 100%;
+    width: 100%;
+}
+
+#meme-image-container {
+    display: inline-block;
+    height: 500px;
+    position: relative;
+    width: 500px;
+}
+
+#meme-text {
+    position: absolute;
+    bottom: 40px;
+    font-size: 70px;
+}
