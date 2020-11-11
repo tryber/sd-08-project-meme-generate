@@ -13,8 +13,9 @@ function uploadImage(){
     let reader = new FileReader();
     reader.onload = function () {
       let img = new Image();
-      img.src = reader.result;
-      img.className = 'meme-pic';
+      let value = '500px';
+      img.src = reader.result;      
+      //img.className = 'meme-pic';
       let imgContainer = document.getElementById('meme-image-container');
       imgContainer.appendChild(img);
     }
