@@ -21,7 +21,7 @@
   font-size: 30px;
   margin: 10px;
   position: absolute;
-  text-align: left;
+  text-align: center;
   text-shadow: 5px 5px 5px black;
   font-family: Luckiest Guy;
 }
@@ -123,3 +123,17 @@ main {
     position: relative;
     width: 400px;
   }
+
+.meme-1, .meme-2, .meme-3, .meme-4 {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.img-container {
+  width: 210px ;
+  position: relative;
+  bottom: 600px;
+  left: 1000px;
+  background-color:white;
+}
