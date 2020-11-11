@@ -61,3 +61,39 @@ main {
     font-size: 80px;
     top: 30px;
 }
+
+.button-container {
+    position: relative;
+   bottom: 350px;
+   left: 150px;
+   width: 150px;
+}
+
+.fire, .water, .earth {
+    display: block;
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: Luckiest Guy;
+    padding-top: 5px;
+}
+
+.fire {
+    background-color: red;
+}
+.water {
+    background-color: blue;
+}
+.earth {
+    background-color: green;
+}
+.border {
+    color: white;
+    font-family: Luckiest Guy;
+    text-shadow: 2px 2px 1px black;
+    font-size: 30px;
+    background-color: brown;
+    padding-top: 10px;
+}
