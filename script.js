@@ -7,8 +7,11 @@ window.onload = function() {
 
     const memeInsert = document.querySelector('#meme-insert');
     const memeImage = document.querySelector('#meme-image');
-    memeInsert.addEventListener('click', function() {
-        memeImage.src = memeInsert.value;
+    memeInsert.addEventListener('input', function() {
+        if (memeInsert.files[0] != undefined) {
+            console.log(memeInsert.files[0])
+            memeImage.src = URL.createObjectURL(memeInsert.files[0]);
+        }
     })
 
     const imageContainer = document.querySelector('#meme-image-container');
