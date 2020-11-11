@@ -6,12 +6,15 @@
     <title>Meme Genarator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>    
+<body>
     <input type="text" id="text-input">
+    <form>
+      <input type="file" onchange="preview()"> 
+    </form>
     <div id="meme-image-container">
         <p id="meme-text"></p>
-        <img src="" alt="Foto escolhida">
-    </div>    
+        <img id="meme-image" src=""/>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
