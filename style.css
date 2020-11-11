@@ -9,9 +9,12 @@
 }
 
 .text-meme {
-    position: absolute;
-    top: 15px;
+    color: white;
+    font-size: 30px;
     left: 15px;
+    position: absolute;
+    text-shadow: #000 5px 5px 5px;
+    top: 15px;
 }
 
 .imagem-meme {
