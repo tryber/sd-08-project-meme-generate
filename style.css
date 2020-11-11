@@ -1,7 +1,21 @@
 #meme-image-container {
-  position: relative;
+  background-color: white;
+  border: 1px solid black;
+  position: relative; 
+  width: 400px;
+  min-height: 400px;
 }
 
 #meme-text {
   position: absolute;
+  width: 100%;  
+  overflow: auto;
+  z-index: 1;
 }
+
+#meme-image {
+  position: absolute;
+  width: 100%;
+}
+
+
