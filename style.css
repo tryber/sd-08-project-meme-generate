@@ -1,8 +1,8 @@
 .title {
-  background-color: rgb(96, 32, 64);
+  background-color: rgb(96 , 32 , 64);
   color: white;
-  margin: 0 0 15px 0;
   left: 0;
+  margin: 0 0 15px;
   position: absolute;
   text-align: center;
   top: 0;
@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: rgb(77, 77, 77);
+  background-color: rgb(77 , 77 , 77);
 }
 
 .main-content {
@@ -34,7 +34,7 @@ body {
   font-size: 30px;
   left: 15px;
   position: absolute;
-  text-shadow: #000 5px 5px 5px;
+  text-shadow: black 5px 5px 5px;
   top: 15px;
 }
 
