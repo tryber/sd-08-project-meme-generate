@@ -1,0 +1,7 @@
+#meme-image-container {
+  position: relative;
+}
+
+#meme-text {
+  position: absolute;
+}
