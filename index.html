@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="title">
+      <h1>Project Meme Generator =)</h1>
+    </header>
+    <main class="main-content">
+      <section class="inputs">
+        <form>
+          <input
+            type="text"
+            id="text-input"
+            maxlength="60"
+            class="input"
+            placeholder="Digite o texto aqui"
+          />
+          <input type="file" id="meme-insert" accept="image/*" />
+        </form>
+      </section>
+
+      <section class="conteudo-meme">
+        <div class="container" id="meme-image-container">
+          <img id="meme-image" src="" class="imagem-meme" />
+          <p id="meme-text" class="text-meme"></p>
+        </div>
+      </section>
+
+      <section class="buttons">
+        <button id="fire" class="fire">Fire</button>
+        <button id="water" class="water">Water</button>
+        <button id="earth" class="earth">Earth</button>
+      </section>
+
+      <section class="imgs-memes">
+        <p>Memes pré prontos:</p>
+        <img
+          src="./imgs/meme1.png"
+          alt="imagem nazaré meme"
+          class="imagens-memes-protos"
+          id="meme-1"
+        />
+        <img
+          src="./imgs/meme2.png"
+          alt="imagem faustão"
+          class="imagens-memes-protos"
+          id="meme-2"
+        />
+        <img
+          src="./imgs/meme3.png"
+          alt="imagem burguês rico com sinal da meia"
+          class="imagens-memes-protos"
+          id="meme-3"
+        />
+        <img
+          src="./imgs/meme4.png"
+          alt="imagem betina 1 Milhão"
+          class="imagens-memes-protos"
+          id="meme-4"
+        />
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
