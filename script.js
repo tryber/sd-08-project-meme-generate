@@ -10,6 +10,6 @@ function atualizaTexto() {
 entradaTexto.addEventListener("input",atualizaTexto);
 
 function atualizaImagem () {
-    imageMeme.src = entradaImagem.value;
+    imageMeme.src = entradaImagem.files[0].name;
 }
 entradaImagem.addEventListener("change",atualizaImagem);
