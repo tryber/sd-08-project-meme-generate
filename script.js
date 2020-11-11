@@ -5,5 +5,5 @@ function enviaTextoMeme(evento) {
 
 window.onload = function () {
   let inputText = document.querySelector("#text-input");
-  inputText.addEventListener("change", enviaTextoMeme);
+  inputText.addEventListener('input', enviaTextoMeme);
 };

@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header class="title">
-      <h1>Meme Generator</h1>
-    </header>
-    <main>
-      <input type="text" id="text-input" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="title">
+    <h1>Meme Generator</h1>
+  </header>
+  <main>
 
-      <div id="meme-image-container" class="container">
-        <p id="meme-text" class="text-meme"></p>
+    <section class="inputs">
+      <label>Texto Meme:</label>
+      <input type="text" id="text-input">
+    </section>
+
+    <section class="conteudo-meme">
+      <div id="meme-image-container">
+        <img id="meme-image">
+        <p id="meme-text"></p>
       </div>
-    </main>
+    </section>
+    
+  </main>
 
-    <script src="./script.js"></script>
-  </body>
+  <script src="./script.js"></script>
+</body>
 </html>
