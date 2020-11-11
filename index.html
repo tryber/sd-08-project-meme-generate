@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/1696b49208.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meme Generate</title>
+  </head>
+  <body>
+    <form class="textoDiv">
+      <p class="textTitle">TEXTO</p>
+      <textarea
+        type="text"
+        maxlength="60"
+        id="text-input"
+        cols="30"
+        rows="10"
+      ></textarea>
+    </form>
+
+    <div class="imgUploadDiv">
+      <input type="file" id="meme-insert" onchange="readURL(this);" hidden />
+      <label class="labelBotao" for="meme-insert">ESCOLHA A FOTO</label>
+      <span class="spanBotao"></span>
+    </div>
+
+    <div id="meme-image-container">
+      <div id="meme-text"></div>
+      <div id="meme-image-div">
+        <img src="#" alt="Imagem" id="meme-image" />
+      </div>
+    </div>
+
+    <div id="botoesBordaDiv">
+      <button class="botoesBorda" id="fire">FOGO</button>
+      <button class="botoesBorda" id="water">AGUA</button>
+      <button class="botoesBorda" id="earth">TERRA</button>
+    </div>
+
+    <div class="preLoadedMemesDiv">
+      <div id="meme-1-div" class="preLoadedMemes">
+        <img id="meme-1" src="./imgs/meme1.png" alt="MEME1" />
+      </div>
+      <div id="meme-2-div" class="preLoadedMemes">
+        <img id="meme-2" src="./imgs/meme2.png" alt="MEME2" />
+      </div>
+      <div id="meme-3-div" class="preLoadedMemes">
+        <img id="meme-3" src="./imgs/meme3.png" alt="MEME3" />
+      </div>
+      <div id="meme-4-div" class="preLoadedMemes">
+        <img id="meme-4" src="./imgs/meme4.png" alt="MEME4" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

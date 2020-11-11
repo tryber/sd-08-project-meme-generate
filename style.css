@@ -1,0 +1,126 @@
+.body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#text-input {
+  width: 350px;
+  height: 60px;
+  font-size: 18px;
+}
+
+input#file-upload-button {
+  background-color: #0fa36b;
+}
+
+.spanBotao {
+  font-family: inherit;
+  line-height: 30px;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.textTitle,
+.labelBotao {
+  background-color: #0fa36b;
+  display: inline-block;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  box-shadow: 2px 2px black;
+  margin-top: 0px;
+  margin-right: 20px;
+  padding: 0 10px;
+}
+
+.textoDiv,
+.imgUploadDiv {
+  display: flex;
+  align-items: top;
+  margin-bottom: 40px;
+}
+
+#meme-image-container {
+  border: solid 1px black;
+  background-color: white;
+  box-shadow: 3px 3px black;
+  height: 450px;
+  width: 450px;
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+img {
+  height: 450px;
+  width: 450px;
+}
+
+#meme-text {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 2;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
+  width: 450px;
+  word-break: break-all;
+  bottom: 0;
+  padding: 0 5px 5px 5px;
+}
+
+#meme-image-div {
+  position: absolute;
+  height: 450px;
+  width: 450px;
+}
+
+#botoesBordaDiv {
+  margin-bottom: 30px;
+}
+
+#fire {
+  background-color: red;
+}
+#water {
+  background-color: blue;
+}
+#earth {
+  background-color: green;
+}
+
+.botoesBorda {
+  border: 0;
+  padding: 20px;
+  width: 140px;
+  font-size: 1.1em;
+  color: white;
+  box-shadow: 3px 3px black;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.botoesBorda:focus {
+  outline: none;
+}
+
+#fire:hover {
+  background-color: lightcoral;
+}
+#water:hover {
+  background-color: lightskyblue;
+}
+#earth:hover {
+  background-color: lightgreen;
+}
+
+.preLoadedMemes,
+.preLoadedMemes img {
+  width: 120px;
+  height: 120px;
+  float: left;
+  cursor: pointer;
+}
+.preLoadedMemes:hover {
+  border: 2px solid black;
+}
