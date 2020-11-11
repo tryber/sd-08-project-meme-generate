@@ -1,0 +1,32 @@
+body {
+  box-sizing: border-box;
+}
+
+.container-section {
+  background-color: black;
+  color: white;
+  height: 400px;
+  width: 400px;
+}
+
+.container {
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 400px;
+  }
+
+.container span {
+  position: absolute;
+  text-align: center;
+  top: 80%;
+  width: 100%;
+}
+
+.container img {
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}

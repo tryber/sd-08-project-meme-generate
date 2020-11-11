@@ -1,5 +1,7 @@
 const textInput = document.querySelector('#text-input');
 const memeText = document.querySelector('#meme-text');
+const imageInput = document.querySelector('#meme-insert');
+const imageOutput = document.querySelector("#meme-image");
 
 
 function updateText() {
@@ -7,3 +9,9 @@ function updateText() {
 }
 
 textInput.addEventListener('keyup', updateText);
+
+function loadImage(event) {
+  imageOutput.src = URL.createObjectURL(event.target.files[0]);
+}
+
+imageInput.addEventListener('change', loadImage);

@@ -11,11 +11,27 @@
     <h1>Meme Generatorrrr</h1>
   </header>
   <main>
-    <label f or="meme-text"></label>
-    <input type="text" name="meme-text" id="text-input">
-    <div id="meme-image-container">
-      <span id="meme-text"></span>
-    </div>
+
+    <!-- Meme text input -->
+    <section>
+      <label for="meme-text">Texto do meme</label>
+      <input type="text" name="meme-text" id="text-input">
+    </section>
+
+    <!-- Meme image input -->
+    <section>
+      <label for="meme-img"></label>
+      <input type="file" name="meme-img" id="meme-insert">
+    </section>
+
+    <!-- Meme container -->
+    <section class="container-section">
+      <div id="meme-image-container" class="container">
+        <span id="meme-text"></span>
+        <img src="" alt="Insira uma imagem!" id="meme-image">
+      </div>
+    </section>
+
   </main>
   <script src="script.js"></script>
 </body>
