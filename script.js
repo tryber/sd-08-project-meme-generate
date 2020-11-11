@@ -11,7 +11,7 @@ function updateText() {
 textInput.addEventListener('keyup', updateText);
 
 function loadImage(event) {
-  imageOutput.src = URL.createObjectURL(event.target.files[0]);
+  imageOutput.src = URL.createObjectURL(event.target.files[0]); // src: https://shorturl.at/lqFN2
 }
 
 imageInput.addEventListener('change', loadImage);
