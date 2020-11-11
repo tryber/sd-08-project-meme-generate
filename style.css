@@ -19,8 +19,9 @@ body {
 
 #meme-text {
     position: absolute;
-    color:blue;
-    font-size: 20px;
+    box-shadow: 10px 5px 5px;
+    color:white;
+    font-size: 30px;
 }
 
 #meme-image-container {
