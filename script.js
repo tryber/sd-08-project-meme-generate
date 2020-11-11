@@ -25,27 +25,24 @@ function colorirBordaEarth() {
 }
 
 function acionarMeme1() {
-  let imageMeme = document.querySelector('#meme-image');
-  imageMeme.src = './imgs/meme1.png'
+  let imageMeme = document.querySelector("#meme-image");
+  imageMeme.src = "./imgs/meme1.png";
 }
 
-
 function acionarMeme2() {
-    let imageMeme = document.querySelector('#meme-image');
-    imageMeme.src = './imgs/meme2.png'
-  }
+  let imageMeme = document.querySelector("#meme-image");
+  imageMeme.src = "./imgs/meme2.png";
+}
 
-  function acionarMeme3() {
-    let imageMeme = document.querySelector('#meme-image');
-    imageMeme.src = './imgs/meme3.png'
-  }
+function acionarMeme3() {
+  let imageMeme = document.querySelector("#meme-image");
+  imageMeme.src = "./imgs/meme3.png";
+}
 
-  function acionarMeme4() {
-    let imageMeme = document.querySelector('#meme-image');
-    imageMeme.src = './imgs/meme4.png'
-  }
-
-
+function acionarMeme4() {
+  let imageMeme = document.querySelector("#meme-image");
+  imageMeme.src = "./imgs/meme4.png";
+}
 
 window.onload = function () {
   const inputText = document.querySelector("#text-input");
@@ -65,10 +62,8 @@ window.onload = function () {
   btnWater.addEventListener("click", colorirBordaWater);
   btnEarth.addEventListener("click", colorirBordaEarth);
 
-  meme1.addEventListener('click', acionarMeme1)
-  meme2.addEventListener('click', acionarMeme2)
-  meme3.addEventListener('click', acionarMeme3)
-  meme4.addEventListener('click', acionarMeme4)
-
-
+  meme1.addEventListener("click", acionarMeme1);
+  meme2.addEventListener("click", acionarMeme2);
+  meme3.addEventListener("click", acionarMeme3);
+  meme4.addEventListener("click", acionarMeme4);
 };
