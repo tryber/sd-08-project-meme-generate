@@ -1,5 +1,5 @@
 * {
-    margin: 10px;
+    margin: 5px;
   }
 
 body {
@@ -7,7 +7,18 @@ body {
     background-color: #eee;
 }
 
-.input-container {
+.input-text-container {
     width: 50%;
     display: inline-block;
+}
+
+.input-photo-container {
+    width: 50%;
+    display: inline-block;
+}
+
+#meme-text {
+    position: absolute;
+    color:blue;
+    font-size: 20px;
 }
