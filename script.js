@@ -15,4 +15,19 @@ memeInsert.addEventListener('input', function () {
     memeImage.src = url
 })
 
-inputMeme.maxlength = 4
+// adicionar classe à div atraves de click;
+const buttonFire = document.querySelector('#fire');
+const buttonWater = document.querySelector('#water');
+const buttonEarth = document.querySelector('#earth');
+
+buttonFire.addEventListener('click', function () {
+  memeContainer.className = "border-fire"
+});
+
+buttonWater.addEventListener('click', function () {
+  memeContainer.className = "border-water"
+});
+
+buttonEarth.addEventListener('click', function () {
+  memeContainer.className = "border-earth"
+});

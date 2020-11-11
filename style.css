@@ -97,3 +97,29 @@ main {
     background-color: brown;
     padding-top: 10px;
 }
+
+/* classes para novas bordas */
+.border-fire {
+    background-color: white;
+    border: 3px dashed red;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    width: 400px;
+  }
+  .border-water {
+    background-color: white;
+    border: 5px double blue;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    width: 400px;
+  }
+  .border-earth {
+    background-color: white;
+    border: 6px groove green;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    width: 400px;
+  }
