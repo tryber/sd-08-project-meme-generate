@@ -16,18 +16,22 @@
     <title>Meme Generate</title>
   </head>
   <body>
-    <p class="textTitle">TEXTO</p>
-    <textarea
-      type="text"
-      maxlength="60"
-      id="text-input"
-      cols="30"
-      rows="10"
-    ></textarea>
+    <form class="textoDiv">
+      <p class="textTitle">TEXTO</p>
+      <textarea
+        type="text"
+        maxlength="60"
+        id="text-input"
+        cols="30"
+        rows="10"
+      ></textarea>
+    </form>
 
-    <input type="file" id="meme-insert" onchange="readURL(this);" hidden />
-    <label class="labelBotao" for="meme-insert">ESCOLHA A FOTO</label>
-    <span class="spanBotao"></span>
+    <div class="imgUploadDiv">
+      <input type="file" id="meme-insert" onchange="readURL(this);" hidden />
+      <label class="labelBotao" for="meme-insert">ESCOLHA A FOTO</label>
+      <span class="spanBotao"></span>
+    </div>
 
     <div id="meme-image-container">
       <div id="meme-text"></div>

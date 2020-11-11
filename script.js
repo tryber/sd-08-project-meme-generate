@@ -1,10 +1,7 @@
 window.onload = function () {
   document
     .querySelector("#text-input")
-    .addEventListener("change", atualizarTexto);
-  document
-    .querySelector("#text-input")
-    .addEventListener("keydown", atualizarTexto);
+    .addEventListener("keyup", atualizarTexto);
 
   document.querySelector("#fire").addEventListener("click", aplicarFogo);
   document.querySelector("#water").addEventListener("click", aplicarAgua);
