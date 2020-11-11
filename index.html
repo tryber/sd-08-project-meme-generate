@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p class="textTitle">TEXTO:</p>
+    <textarea
+      maxlength="60"
+      name="text-input"
+      id="text-input"
+      cols="30"
+      rows="10"
+    ></textarea>
+
+    <p class="imgTitle">FOTO:</p>
+    <input
+      type="file"
+      name="meme-insert"
+      id="meme-insert"
+      onchange="readURL(this);"
+    />
+
+    <div id="meme-image-container">
+      <div id="meme-text"></div>
+      <div id="meme-image">
+        <img src="#" alt="Imagem" id="meme-image-img" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
