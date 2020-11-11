@@ -1,0 +1,12 @@
+.meme-container {
+  position: relative;
+}
+
+.meme-container span {
+  position: absolute;
+  z-index: 1;
+}
+.meme-container img {
+  position: absolute;
+  z-index: 0;
+}
