@@ -24,4 +24,11 @@ window.onload = function() {
             }
         }
     })
+
+    addEventListener('click', function(event) {
+        let imagem = event.target;
+        if (imagem.className == 'meme-pronto') {
+            memeImage.src = imagem.src;
+        }
+    })
 }
