@@ -14,3 +14,5 @@ memeInsert.addEventListener('input', function () {
   const url = URL.createObjectURL(memeInsert.files[0])
     memeImage.src = url
 })
+
+inputMeme.maxlength = 4
