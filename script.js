@@ -1,7 +1,7 @@
 const textInput = document.querySelector('#text-input');
 const memeText = document.querySelector('#meme-text');
 const imageInput = document.querySelector('#meme-insert');
-const imageOutput = document.querySelector("#meme-image");
+const imageOutput = document.querySelector('#meme-image');
 
 
 function updateText() {
