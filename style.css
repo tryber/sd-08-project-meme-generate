@@ -14,10 +14,7 @@
     padding-right: 20px;
 }
 
-#meme-image {
-    max-width: 100%;
-    max-height: 100%;
+#meme-image { 
     margin: auto;
     display: block;
-
 }
