@@ -3,26 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/1696b49208.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <title>Meme Generate</title>
   </head>
   <body>
-    <p class="textTitle">TEXTO:</p>
-    <textarea
-      maxlength="60"
-      name="text-input"
-      id="text-input"
-      cols="30"
-      rows="10"
-    ></textarea>
+    <div class="textoDiv">
+      <p class="textTitle">TEXTO:</p>
+      <input
+      type="text"
+        maxlength="60"
+        name="text-input"
+        id="text-input"
+        cols="30"
+        rows="10"
+      ></input>
+    </div>
 
-    <p class="imgTitle">FOTO:</p>
-    <input
-      type="file"
-      name="meme-insert"
-      id="meme-insert"
-      onchange="readURL(this);"
-    />
+    <div class="imgUploadDiv">
+      <input
+        type="file"
+        name="meme-insert"
+        id="meme-insert"
+        onchange="readURL(this);"
+        hidden
+      />
+      <label class="labelBotao" for="meme-insert">ESCOLHA A FOTO</label>
+      <span class="spanBotao"></span>
+    </div>
 
     <div id="meme-image-container">
       <div id="meme-text"></div>

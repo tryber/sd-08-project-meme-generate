@@ -15,6 +15,7 @@ function atualizarTexto() {
 
 function readURL(input) {
   var imgDiv = document.querySelector("#meme-image-img");
+  var spanBtn = document.querySelector(".spanBotao");
   if (input.files && input.files[0]) {
     var reader = new FileReader();
 
@@ -23,5 +24,6 @@ function readURL(input) {
     };
 
     reader.readAsDataURL(input.files[0]);
+    spanBtn.innerHTML = input.files[0].name;
   }
 }
