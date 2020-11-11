@@ -1,5 +1,8 @@
 .meme-container {
-  position: relative;
+  position: absolute;
+  border: 1px solid black;
+  background-color: white;
+  overflow-wrap: break-word;
 }
 
 .meme-container span {
@@ -7,6 +10,7 @@
   z-index: 1;
 }
 .meme-container img {
-  position: absolute;
+  position: relative;
   z-index: 0;
+  display: block;
 }
