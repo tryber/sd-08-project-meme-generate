@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meme generator</title>
+</head>
+<body>
+    <header>MEME GENERATOR</header>
+    <br><br>
+    <div style="display: inline-block;">
+        <div style="float: left;">Texto:</div>
+        <input id="text-input" type="text" maxlength="60"> 
+    </div>
+    <br><br>
+    <div>
+        <div style="float: left;">Foto:</div>
+        <form action="/action_page.php">
+            <input type="file" id="">            
+        </form>
+    </div>
+    <br><br>
+    <div id="meme-image-container">
+        <div id="meme-image">
+            <img id="meme-image-img">
+        </div>
+        <div id="meme-text"></div>        
+    </div>
+    <div>
+        <p>Estilize seu meme: </p>
+        <button id="fire">Fogo!</button>
+        <button id="water">Água!</button>
+        <button id="earth">Terra!</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
