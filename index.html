@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generate - Rafael Maltez</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="general-container">
+  <header>
+    <h1>The Amazing Meme Generator</h1>
+  </header>
+
+  <div class="options-container">
+    <form>
+    <input type="text" id="text-input" class="text-input" maxlength="60" placeholder="digite o texto do meme aqui">
+    <input type="file" name="picture" accept="image/png, image/jpeg" id="submit-file">
+    </form>
+  </div>
+  <div id="meme-image-container" class="meme-image-container">
+    <span id="meme-text" max="60" class="meme-text"></span>
+  </div>
+<div>
+<script src="script.js"></script>
+</body>
+</html>
