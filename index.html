@@ -8,13 +8,23 @@
 </head>
 <body>
     <header>MEME GENERATOR</header>
-    <div>
+    <br><br>
+    <div style="display: inline-block;">
+        <div style="float: left;">Texto:</div>
         <input id="text-input" type="text"> 
     </div>
+    <br><br>
     <div>
-        <img id="meme-image-container" src="Daniel.jpg" style="width:100%; height:100%">
-        <img id="meme-image">
-        <div id="meme-text">dasdasdasasdasdasdaasada</div>
+        <div style="float: left;">Foto:</div>
+        <form action="/action_page.php">
+            <input type="file" id="">            
+        </form>
+    </div>
+    <br><br>
+    <div id="meme-image-container">
+        <div id="meme-imagem">
+            <img id="meme-image-img">
+        </div>        
     </div>
     
     <script src="script.js"></script>
