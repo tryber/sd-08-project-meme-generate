@@ -2,11 +2,20 @@
     background-color: white;
     border: 1px solid black;
     display: inline-block;
+    height: 350px;
+    padding: 0;
     position: relative;
+    width: 350px;
 }
 
 .text-meme {
     position: absolute;
     top: 15px;
     left: 15px;
+}
+
+.imagem-meme {
+    height: 350px;
+    margin: 0;
+    width: 350px;
 }
