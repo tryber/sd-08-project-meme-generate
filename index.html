@@ -16,26 +16,19 @@
     <title>Meme Generate</title>
   </head>
   <body>
-    <div class="textoDiv">
-      <p class="textTitle">TEXTO:</p>
-      <input
-      type="text"
+    <form class="textoDiv">
+      <p class="textTitle">TEXTO</p>
+      <textarea
+        type="text"
         maxlength="60"
-        name="text-input"
         id="text-input"
         cols="30"
         rows="10"
-      ></input>
-    </div>
+      ></textarea>
+    </form>
 
     <div class="imgUploadDiv">
-      <input
-        type="file"
-        name="meme-insert"
-        id="meme-insert"
-        onchange="readURL(this);"
-        hidden
-      />
+      <input type="file" id="meme-insert" onchange="readURL(this);" hidden />
       <label class="labelBotao" for="meme-insert">ESCOLHA A FOTO</label>
       <span class="spanBotao"></span>
     </div>
@@ -48,16 +41,24 @@
     </div>
 
     <div id="botoesBordaDiv">
-        <button class="botoesBorda" id="fire">FOGO</button>
-        <button class="botoesBorda" id="water">AGUA</button>
-        <button class="botoesBorda" id="earth">TERRA</button>
+      <button class="botoesBorda" id="fire">FOGO</button>
+      <button class="botoesBorda" id="water">AGUA</button>
+      <button class="botoesBorda" id="earth">TERRA</button>
     </div>
 
     <div class="preLoadedMemesDiv">
-        <div id="meme-1" class="preLoadedMemes"><img id="meme-1-img" src="./imgs/meme-1.png" alt="MEME1"></div>
-        <div id="meme-2" class="preLoadedMemes"><img id="meme-2-img" src="./imgs/meme-2.png" alt="MEME2"></div>
-        <div id="meme-3" class="preLoadedMemes"><img id="meme-3-img" src="./imgs/meme-3.png" alt="MEME3"></div>
-        <div id="meme-4" class="preLoadedMemes"><img id="meme-4-img" src="./imgs/meme-4.png" alt="MEME4"></div> 
+      <div id="meme-1" class="preLoadedMemes">
+        <img id="meme-1-img" src="./imgs/meme-1.png" alt="MEME1" />
+      </div>
+      <div id="meme-2" class="preLoadedMemes">
+        <img id="meme-2-img" src="./imgs/meme-2.png" alt="MEME2" />
+      </div>
+      <div id="meme-3" class="preLoadedMemes">
+        <img id="meme-3-img" src="./imgs/meme-3.png" alt="MEME3" />
+      </div>
+      <div id="meme-4" class="preLoadedMemes">
+        <img id="meme-4-img" src="./imgs/meme-4.png" alt="MEME4" />
+      </div>
     </div>
 
     <script src="script.js"></script>
