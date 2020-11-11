@@ -1,3 +1,6 @@
+* {
+    margin: 0;
+}
 .meme-image-container {
   background-color: white;
   border: 1px solid black;
@@ -13,13 +16,14 @@
 }
   
 .meme-text {
-  bottom: 1px;
+  bottom: 20px;
   color: white;
-  font-size: 50px;
+  font-size: 30px;
   margin: 10px;
   position: absolute;
   text-align: left;
   text-shadow: 5px 5px 5px black;
+  font-family: Luckiest Guy;
 }
 
 header {
@@ -45,8 +49,15 @@ main {
 
 .text-input {
   width: 390px;
-  background-color: grey;
+  background-color: black;
   color: white;
   text-align: center;
   
+}
+
+.title {
+    position: relative;
+    font-family: Luckiest Guy;
+    font-size: 80px;
+    top: 30px;
 }
