@@ -38,16 +38,16 @@ function trocaBordaContainer(evento) {
 }
 
 function selecionaMeme(event) {
-  containerImagem.style.backgroundImage = event.target.style.backgroundImage;
+  containerImagem.style.backgroundImage = `url('${event.target.src}')`;
   imagemEscolhida = '';
 }
 
 function criaMemePadrao() {
   for (let index = 1; index < 5; index += 1) {
-    const criaDivMemes = document.createElement('div');
-    criaDivMemes.id = `meme-${index}`
+    const criaDivMemes = document.createElement('img');
+    criaDivMemes.id = `meme-${index}`;
     criaDivMemes.className = 'meme-padrao';
-    criaDivMemes.style.backgroundImage = `url('imgs/meme${index}.png')`;
+    criaDivMemes.src = `imgs/meme${index}.png`;
     criaDivMemes.addEventListener('click', selecionaMeme);
     footer.append(criaDivMemes);
   }
