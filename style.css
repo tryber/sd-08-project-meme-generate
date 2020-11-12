@@ -64,7 +64,7 @@ main {
     position: absolute;
     align-self: flex-end;
     font-size: 30px;
-    text-shadow: white 5px 5px 5px;
+    text-shadow: rgb(0,0,0) 5px 5px 5px;
     color: white;
 }
 aside {
