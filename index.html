@@ -14,11 +14,11 @@
   </header>
   <main>
     <section class="controller text-insert">
-      <label for="meme-text">Texto do meme</label>
+      <label for="meme-text">Texto do meme:</label>
       <input type="text" name="meme-text" id="text-input" maxlength="60">
     </section>
     <section class="controller image-insert">
-      <label for="meme-img"></label>
+      <label for="meme-img">Imagem do meme:</label>
       <input type="file" name="meme-img" id="meme-insert">
     </section>
     <section class="container-section">
@@ -26,6 +26,11 @@
         <span id="meme-text"></span>
         <img src="" alt="Insira uma imagem!" id="meme-image">
       </div>
+    </section>
+    <section class="controller border-change">
+      <button id="water" class="water"><span>⛲</span>	</button>
+      <button id="fire" class="fire"><span>🔥</span></button>
+      <button id="earth" class="earth"><span>🌿</span></button>
     </section>
   </main>
   <script src="script.js"></script>
