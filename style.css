@@ -1,0 +1,25 @@
+.content {
+  margin: 0 auto;
+  width: 60%;
+}
+
+
+.text-input {
+  display: block;
+  margin: 10px auto;
+  width: 200px;
+}
+
+.meme-image-container {
+  border: 1px solid black;
+  height: 450px;
+  margin: 20px auto;
+  width: 375px;
+}
+
+.meme-text {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 5px;
+  text-align: center;
+}
