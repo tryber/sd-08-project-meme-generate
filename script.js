@@ -44,3 +44,11 @@ changeBorder(baseBorder());
 waterButton.addEventListener('click', () => changeBorder(waterBorder()));
 fireButton.addEventListener('click', () => changeBorder(fireBorder()));
 earthButton.addEventListener('click', () => changeBorder(earthBorder()));
+
+function loadTemplate(event) {
+  if (event.target.src) {
+    imageOutput.src = event.target.src;
+  }
+}
+
+document.querySelector('.preloaded-images').addEventListener('click', loadTemplate);

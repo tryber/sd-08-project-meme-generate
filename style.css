@@ -74,3 +74,8 @@ table {
 .water {
   background-color: blue
 }
+
+.preloaded-images img {
+  width: 90px;
+  height: 90px;
+}
