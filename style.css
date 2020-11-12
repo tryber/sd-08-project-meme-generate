@@ -6,6 +6,8 @@
     width: 500px;
     height: 500px;
     position: relative;
+    border: 1px solid black;
+    background-color: white;
 }
 
 #meme-text{
@@ -14,13 +16,6 @@
 }
 
 #meme-image{
-    width: 500px;
-    height: 500px;
-    border: 1px solid black;
-    background-color: white;
-}
-
-#meme-insert{
     height: 100%;
     width: 100%;
     object-fit: fill;
