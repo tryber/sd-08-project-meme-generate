@@ -13,16 +13,16 @@
     <h1>Meme Generator</h1>
   </header>
   <main>
-    <table class="controller">
-      <tr>
-        <td><label for="meme-text">Texto do meme:</label></td>
-        <td><input type="text" name="meme-text" id="text-input" maxlength="60"></td>
-      </tr>
-      <tr>
-        <td><label for="meme-img">Imagem do meme:</label></td>
-        <td><input type="file" name="meme-img" id="meme-insert"></td>
-      </tr>
-    </table>
+    <section class="controller">
+      <div class="row">
+        <label for="meme-text">Texto do meme:</label>
+        <input type="text" name="meme-text" id="text-input" maxlength="60">
+      </div>
+      <div class="row">
+        <label for="meme-img">Imagem do meme:</label>
+        <input type="file" name="meme-img" id="meme-insert">
+      </div>
+    </section>
     <section class="container-section">
       <div id="meme-image-container" class="container">
         <span id="meme-text"></span>
