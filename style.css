@@ -1,4 +1,8 @@
-#meme-image-container {
+body , div , img , button {
+  box-sizing: border-box;
+}
+
+.meme-image-container {
   position: relative;
   background-color: white;
   border: 1px solid black;
@@ -20,3 +24,16 @@
   text-shadow: 5px 5px 5px black;
   color: white;
 }
+
+.fire {
+  border: 3px dashed red;
+}
+
+.water {
+  border: 5px double blue;
+}
+
+.earth {
+  border: 6px groove brown;
+}
+

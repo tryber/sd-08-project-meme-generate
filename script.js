@@ -21,3 +21,24 @@ imgInput.addEventListener('change', function(event) {
   const file = event.target.files[0];
   if (file) reader.readAsDataURL(file);
 });
+
+function toggleFire() {
+  memeImg.className = 'fire';
+}
+
+function toggleWater() {
+  memeImg.className = 'water';
+}
+
+function toggleEarth() {
+  memeImg.className = 'earth';
+}
+
+const buttonFire = document.getElementById('fire');
+buttonFire.addEventListener('click', toggleFire);
+
+const buttonWater = document.getElementById('water');
+buttonWater.addEventListener('click', toggleWater);
+
+const buttonEarth = document.getElementById('earth');
+buttonEarth.addEventListener('click', toggleEarth);
