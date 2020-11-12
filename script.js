@@ -33,32 +33,32 @@ function changeLayout(type) {
 function baseLayout() {
   const base = [
     '1px solid black',
-    'linear-gradient(rgb(196 , 176 , 176) , rgb(179 , 174 , 197))'
-  ]
+    'linear-gradient(rgb(196 , 176 , 176) , rgb(179 , 174 , 197))',
+  ];
   return base;
 }
 
 function fireLayout() {
   const fire = [
     '3px dashed red',
-    'linear-gradient(rgb(182 , 101 , 101) , rgb(212 , 212 , 50))'
-  ]
-  return fire;  
+    'linear-gradient(rgb(182 , 101 , 101) , rgb(212 , 212 , 50))',
+  ];
+  return fire;
 }
 
 function waterLayout() {
   const water = [
     '5px double blue',
-    'linear-gradient(rgb(156 , 165 , 216) , rgb(104 , 191 , 197))'
-  ]
+    'linear-gradient(rgb(156 , 165 , 216) , rgb(104 , 191 , 197))',
+  ];
   return water;
 }
 
 function earthLayout() {
   const earth = [
     '6px groove green',
-    'linear-gradient(rgb(143 , 167 , 138) , rgb(87 , 77 , 76))'
-  ]
+    'linear-gradient(rgb(143 , 167 , 138) , rgb(87 , 77 , 76))',
+  ];
   return earth;
 }
 
