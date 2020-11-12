@@ -9,15 +9,15 @@ function changeMemeText() {
   memeText.textContent = text;
 }
 
-textInput.addEventListener("input", changeMemeText);
+textInput.addEventListener('input', changeMemeText);
 
 function updateImage() {
   memeImg.src = reader.result;
 }
 
-reader.addEventListener('load', updateImage)
+reader.addEventListener('load', updateImage);
 
-imgInput.addEventListener('change', function(event) {
+imgInput.addEventListener('change', function (event) {
   const file = event.target.files[0];
   if (file) reader.readAsDataURL(file);
 });
