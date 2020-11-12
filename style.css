@@ -1,0 +1,51 @@
+.meme-image-container {
+  background-color: white;
+  border: 1px solid black;
+  height: 500px;
+  overflow-wrap: break-word;
+  position: relative;
+  width: 500px;
+}
+
+.meme-image-container span {
+  color: white;
+  font-size: 30px;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  width: 100%;
+}
+
+.meme-image-container img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.fire {
+  background-color: red;
+  height: 50px;
+  margin: 20px 0;
+  width: 80px;
+}
+
+.earth {
+  background-color: green;
+  height: 50px;
+  margin: 20px 0;
+  width: 80px;
+}
+
+.water {
+  background-color: blue;
+  height: 50px;
+  margin: 20px 0;
+  width: 80px;
+}
+
+.famous-memes img {
+  display: inline-block;
+  width: 25%;
+}
