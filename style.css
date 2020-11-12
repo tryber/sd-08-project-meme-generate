@@ -43,3 +43,9 @@
   margin: 20px 0;
   width: 80px;
 }
+
+.famous-memes img {
+  display: inline-block;
+
+  width: 25%;
+}

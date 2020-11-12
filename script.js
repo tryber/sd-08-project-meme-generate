@@ -25,3 +25,17 @@ for (let pos = 0; pos < btnsBorders.length; pos += 1) {
     container.style.border = borders[pos];
   });
 }
+
+const famousMemesQuant = 4;
+const famousMemes = document.querySelector('.famous-memes');
+
+for (let index = 1; index <= famousMemesQuant; index += 1) {
+  const pict = document.createElement('img');
+  pict.src = `./imgs/meme${index}.png`;
+  pict.id = `meme-${index}`;
+  famousMemes.appendChild(pict);
+
+  pict.addEventListener('click', function (event) {
+    memeImg.src = event.target.src;
+  });
+}
