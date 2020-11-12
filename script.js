@@ -45,6 +45,7 @@ function selecionaMeme(event) {
 function criaMemePadrao() {
   for (let index = 1; index < 5; index += 1) {
     const criaDivMemes = document.createElement('div');
+    criaDivMemes.id = `meme-${index}`
     criaDivMemes.className = 'meme-padrao';
     criaDivMemes.style.backgroundImage = `url('imgs/meme${index}.png')`;
     criaDivMemes.addEventListener('click', selecionaMeme);
