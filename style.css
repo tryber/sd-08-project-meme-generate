@@ -13,9 +13,8 @@ body {
 }
 
 .container span {
-  -webkit-text-stroke: 0.5px black;
   color: white;
-  font-family: Passion One, Arial Narrow Bold, sans-serif;
+  font-family: Passion One, sans-serif;
   font-size: 30px;
   font-weight: 700;
   position: absolute;
@@ -24,6 +23,7 @@ body {
   text-transform: uppercase;
   top: 80%;
   width: 100%;
+  -webkit-text-stroke: 0.5px black;
 }
 
 .container img {
