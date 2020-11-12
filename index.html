@@ -7,7 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>MEME GENERATOR</h1>
+    <input type="text" id="text-input">
+    <input type="file" accept="image/*" id="select-img" onchange="handleFiles(event)">
     <script src="./script.js"></script>
+    <div id="meme-image-container">
+        <div id="meme-text">Teste</div>
+        <div id="meme-image">
+            <img src="" alt="" id="meme-insert">
+        </div>
+    </div>
 </body>
 </html>
