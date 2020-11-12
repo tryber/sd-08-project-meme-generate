@@ -37,7 +37,6 @@ body {
 }
 
 .container span {
-  -webkit-text-stroke: 0.5px black;
   color: white;
   font-family: Passion One, sans-serif;
   font-size: 30px;
@@ -45,6 +44,7 @@ body {
   position: absolute;
   text-align: center;
   text-shadow: black 5px 5px 5px;
+  -webkit-text-stroke: 0.5px black;
   text-transform: uppercase;
   top: 80%;
   width: 100%;
