@@ -4,14 +4,14 @@ window.onload = function () {
     const divTexto = document.getElementById('meme-text');
     const btnChooseFile = document.getElementById('meme-insert');
     const inputFile = document.getElementById('file');
-    const imgPhoto = document.getElementById('meme-image');
+    const imgPhoto = document.getElementById('meme-image-id');
     const lblFileName = document.getElementById('file-name');
     // Lista de eventos dos objetos
     txtTexto.addEventListener('keyup', inputText);
     btnChooseFile.addEventListener('click', openDialog);
     inputFile.addEventListener('change', submitImage);
     // Lista de  funções dos eventos dos objetos    
-    
+
     function inputText(event) {
         divTexto.innerText = txtTexto.value;
     }

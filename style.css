@@ -7,8 +7,12 @@ body {
     background-color: #eee;
 }
 
+img {
+    height: 480px;
+    width: 480px;
+}
+
 .input-text-container {
-    width: 60%;
     display: inline-block;
 }
 
@@ -18,26 +22,31 @@ body {
 }
 
 #text-input {
-    width: 150px;
+    width: 400px;
 }
 
 #meme-text {
     position: absolute;
-    box-shadow: black 5px 5px 5px;
-    color:white;
+    z-index: 2;
+    text-shadow: 5px 5px 5px black;
     font-size: 30px;
+    color: white;
+    height: 500px;
+    width: 500px;
+    word-break: break-all;
 }
 
 #meme-image-container {
     background-color: white;
-    border: black solid 1px;
-    width: 60%;
-    height: 100%;
+    border: solid 1px black;
+    height: 500px;
+    width: 500px;
     margin-left: 10px;
 }
 
 #meme-image {
-    max-width: 98%;
-    height: auto;
+    position: absolute;
+    height: 500px;
+    width: 500px;
 }
 
