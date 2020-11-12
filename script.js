@@ -14,3 +14,43 @@ function atualizaImagem () {
     imageMeme.src = url;
 }
 entradaImagem.addEventListener("change",atualizaImagem);
+
+function bordaFire () {
+    if (memeContainer.style.border === "3px dashed red"){
+        memeContainer.style.border = "1px solid black";
+    } else {
+        memeContainer.style.border = "3px dashed red";
+    }
+}
+document.getElementById("fire").addEventListener("click",bordaFire);
+
+function bordaWater () {
+    if (memeContainer.style.border === "5px double blue"){
+        memeContainer.style.border = "1px solid black";
+    } else {
+        memeContainer.style.border = "5px double blue";
+    }
+}
+document.getElementById("water").addEventListener("click",bordaWater);
+
+function bordaEarth () {
+    if (memeContainer.style.border === "6px groove green"){
+        memeContainer.style.border = "1px solid black";
+    } else {
+        memeContainer.style.border = "6px groove green";
+    }
+}
+document.getElementById("earth").addEventListener("click",bordaEarth);
+
+function escolheMemesProntos (event) {
+    if (event.target === document.querySelectorAll(".meme-pronto")[0]){
+        imageMeme.src = "meme1.jpg";
+    } else if  (event.target === document.querySelectorAll(".meme-pronto")[1]) {
+        imageMeme.src = "meme2.jpeg";
+    } else if (event.target === document.querySelectorAll(".meme-pronto")[2]) {
+        imageMeme.src = "meme3.jpg";
+    } else if (event.target === document.querySelectorAll(".meme-pronto")[3]) {
+        imageMeme.src = "meme4.jpg";
+    }
+}
+document.querySelector(".meme-pronto-container").addEventListener("click",escolheMemesProntos);

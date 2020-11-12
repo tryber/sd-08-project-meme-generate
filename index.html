@@ -8,16 +8,29 @@
 </head>
 <body>
     <header id="header">MEME GENERATOR</header>
-
-    <span>Texto:</span>
-    <input type="text" maxlength="60" placeholder="Digite a frase" id="text-input">
-    <br>
-    <span>Arquivo:</span>
-    <input type="file" accept="image/*" placeholder="Escolha a imagem" id="meme-insert">
-
+    <div class="inputs">
+        <span>Texto:</span>
+        <input type="text" maxlength="60" placeholder="Digite a frase" id="text-input">
+        <br>
+        <span>Arquivo:</span>
+        <input type="file" accept="image/*" placeholder="Escolha a imagem" id="meme-insert">
+    </div>
     <div id="meme-image-container">
         <p id="meme-text"></p>
         <img src="" alt="imagem do meme" id="meme-image">
+    </div>
+
+    <div class="botoes-bordas">
+        <button id="fire" class="fire">Borda FIRE</button>
+        <button id="water" class="water">Borda WATER</button>
+        <button id="earth" class="earth">Borda EARTH</button>
+    </div>
+
+    <div class="meme-pronto-container">
+        <img src="meme1.jpg" alt="meme pronto 1" class="meme-pronto">
+        <img src="meme2.jpeg" alt="meme pronto 2" class="meme-pronto">
+        <img src="meme3.jpg" alt="meme pronto 3" class="meme-pronto">
+        <img src="meme4.jpg" alt="meme pronto 4" class="meme-pronto">
     </div>
 
     <script src="script.js"></script>
