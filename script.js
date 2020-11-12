@@ -6,34 +6,56 @@ const textoMeme = document.getElementById('meme-text');
 const btnFire = document.getElementById('fire');
 const btnWater = document.getElementById('water');
 const btnEarth = document.getElementById('earth');
+const footer = document.getElementById('footer');
+let imagemEscolhida = '';
 
 function alteraTextoMeme() {
   textoMeme.innerText = input.value;
 }
 
 function mostraImagemEscolhida() {
-  const imagemEscolhida = URL.createObjectURL(escolherImagem.files[0]);
+  imagemEscolhida = URL.createObjectURL(escolherImagem.files[0]);
   containerImagem.style.backgroundImage = `url('${imagemEscolhida}')`;
 }
 
 function trocaBordaContainer(evento) {
-  switch(evento.target.id) {
+  switch (evento.target.id) {
     case 'fire':
-    containerPrincipal.style.border = 'dashed 3px red';
-    break;
+      containerPrincipal.style.border = 'dashed 3px red';
+      break;
 
     case 'water':
-    containerPrincipal.style.border = 'double 5px blue';
-    break;
+      containerPrincipal.style.border = 'double 5px blue';
+      break;
 
     case 'earth':
-    containerPrincipal.style.border = 'groove 6px green';
-    break;
+      containerPrincipal.style.border = 'groove 6px green';
+      break;
+
+    default:
+      break;
   }
 }
 
+function selecionaMeme(event) {
+  containerImagem.style.backgroundImage = event.target.style.backgroundImage;
+  imagemEscolhida = '';
+}
+
+function criaMemePadrao() {
+  for (let index = 1; index < 5; index += 1) {
+    const criaDivMemes = document.createElement('div');
+    criaDivMemes.className = 'meme-padrao';
+    criaDivMemes.style.backgroundImage = `url('imgs/meme${index}.png')`;
+    criaDivMemes.addEventListener('click', selecionaMeme);
+    footer.append(criaDivMemes);
+  }
+}
+
+criaMemePadrao();
+
 input.addEventListener('keyup', alteraTextoMeme);
 escolherImagem.addEventListener('change', mostraImagemEscolhida);
-btnFire.addEventListener('click', trocaBordaContainer)
-btnWater.addEventListener('click', trocaBordaContainer)
-btnEarth.addEventListener('click', trocaBordaContainer)
+btnFire.addEventListener('click', trocaBordaContainer);
+btnWater.addEventListener('click', trocaBordaContainer);
+btnEarth.addEventListener('click', trocaBordaContainer);

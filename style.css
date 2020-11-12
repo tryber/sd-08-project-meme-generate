@@ -33,5 +33,33 @@ input {
 }
 
 button {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
   margin: 5px;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+
+#footer {
+  display: inline-flex;
+}
+
+.meme-padrao {
+  background-size: cover;
+  background-position: center;
+  border: solid 1px black;
+  height: 100px;
+  margin: 5px;
+  width: 100px;
 }
