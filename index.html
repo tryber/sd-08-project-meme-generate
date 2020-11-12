@@ -7,8 +7,20 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    
-
+    <header>
+      <h1>Meme Generator</h1>
+      <input id='text-input' maxlength="60">
+      <br>
+      <form method="post" enctype="multipart/form-data">
+        <input id='meme-insert' type='file' multiple='false' accept='image/*'>
+      </form>
+    </header>
+    <main>
+      <div class='meme-container' id='meme-image-container'>
+        <div class= 'imagem-container' id='meme-image'></div>
+        <div class= 'texto-container'id='meme-text'></div>
+      </div>
+    </main>
 
     <script src="script.js"></script>
   </body>

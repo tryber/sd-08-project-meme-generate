@@ -1,3 +1,32 @@
 body {
   text-align: center;
 }
+
+input {
+  margin: 5px;
+}
+
+.meme-container {
+  height: 300px;
+  margin: auto;
+  position: relative;
+  width: 300px;
+}
+
+.imagem-container {
+  background-size: cover;
+  border: solid 1px black;
+  height: 300px;
+  position: absolute;
+  width: 300px;
+}
+
+.texto-container {  
+  color: white;
+  font-size: 30px;
+  max-height: 300px;
+  max-width: 300px;
+  position: absolute;
+  text-shadow: 5px 5px 5px black;
+  word-break: break-all;
+}
