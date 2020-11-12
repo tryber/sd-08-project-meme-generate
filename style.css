@@ -1,0 +1,57 @@
+body {
+    border: 1px solid plum;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+header {
+    display:flex;
+    align-self: flex-end;
+    border: 1px solid cornflowerblue;
+    width: 60%;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.text-input {
+    display: flex;
+    width: 75%;
+    align-self: flex-end;
+    height: 40%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.user-text-input{
+    border: 1px solid;
+    display: flex;
+    height: 40px;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    border: 1px solid yellow;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+.meme-image-container {
+  display: flex;
+  border: 1px solid red;
+  width:50%;
+  margin-right: 5%;
+}
+
+aside {
+    display: flex;
+    border: 1px solid green;
+    width: 20%;
+}
