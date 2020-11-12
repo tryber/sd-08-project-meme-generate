@@ -7,17 +7,14 @@ function alteraTextoMeme() {
   textoMeme.innerText = input.value;
 }
 
-function mostraImagemEscolhida(event) {
-  const curlFiles = escolherImagem.files
+function mostraImagemEscolhida() {
+  const curlFiles = escolherImagem.files;
 
   for (const file of curlFiles) {
-    let teste = URL.createObjectURL(file);
-    containerImagem.style.backgroundImage = `url('${teste}')`;
+    const imagemEscolhida = URL.createObjectURL(file);
+    containerImagem.style.backgroundImage = `url('${imagemEscolhida}')`;
   }
 }
 
-
-
-
-input.addEventListener('keyup', alteraTextoMeme)
-escolherImagem.addEventListener('change', mostraImagemEscolhida)
+input.addEventListener('keyup', alteraTextoMeme);
+escolherImagem.addEventListener('change', mostraImagemEscolhida);

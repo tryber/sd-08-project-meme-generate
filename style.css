@@ -7,6 +7,8 @@ input {
 }
 
 .meme-container {
+  background-color: white;
+  border: solid 1px black;
   height: 300px;
   margin: auto;
   position: relative;
@@ -15,13 +17,12 @@ input {
 
 .imagem-container {
   background-size: cover;
-  border: solid 1px black;
   height: 300px;
   position: absolute;
   width: 300px;
 }
 
-.texto-container {  
+.texto-container {
   color: white;
   font-size: 30px;
   max-height: 300px;
