@@ -3,13 +3,12 @@
   width: 60%;
 }
 
-.input {
+.input , .buttons {
   margin: auto;
   width: 375px;
 }
 
 .text-input , .meme-insert  {
-  display: block;
   margin: 10px 0;
 }
 
@@ -41,4 +40,9 @@
 .meme-image {
   height: 450px;
   width: 375px;
+}
+
+.meme-samples {
+  display: flex;
+  justify-content: space-evenly;
 }

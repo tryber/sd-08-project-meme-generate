@@ -9,13 +9,21 @@
 <body>
   <main class="content">
     <section class="input">
-      <input type="text" id="text-input" class="text-input" maxlength="60">
+      <label for="text-input">Texto: </label>
+      <input type="text" id="text-input" class="text-input" maxlength="60"><br>
+      <label for="meme-insert">Imagem: </label>
       <input type="file" accept="image/*" id="meme-insert" class="meme-insert">
+    </section>
+    <section class="buttons">
+      <button id="fire">Fogo</button>
+      <button id="water">Água</button>
+      <button id="earth">Terra</button>
     </section>
     <div id="meme-image-container" class="meme-image-container">
       <h1 id="meme-text" class="meme-text"></h1>
       <img src="" alt="" id="meme-image" class="meme-image">
     </div>
+    <section class="meme-samples"></section>
   </main>
   <script src="script.js"></script>
 </body>
