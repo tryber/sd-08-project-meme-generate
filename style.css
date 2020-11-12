@@ -16,7 +16,7 @@ input {
   width: 400px;
   position: relative;
   background-color: #fff;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 #meme-image-container img {
@@ -45,4 +45,10 @@ button {
 }
 #earth {
   background-color: green;
+}
+
+#meme-1 , #meme-2 , #meme-3 , #meme-4 {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
 }
