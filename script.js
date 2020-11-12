@@ -1,3 +1,4 @@
+const memeContainer = document.getElementById('meme-image-container');
 const textInput = document.getElementById('text-input');
 const memeText = document.getElementById('meme-text');
 const memeImg = document.getElementById('meme-image');
@@ -22,16 +23,30 @@ imgInput.addEventListener('change', function (event) {
   if (file) reader.readAsDataURL(file);
 });
 
+const borders = ['fire', 'water', 'earth'];
+
+function removeContainerBorders() {
+  for (let index = 0; index < borders.length; index += 1) {
+    const border = borders[index];
+    memeContainer.classList.remove(`border-${border}`);
+  }
+}
+
+function addContainerBorder(border) {
+  removeContainerBorders();
+  memeContainer.classList.add(`border-${border}`);
+}
+
 function toggleFire() {
-  memeImg.className = 'border-fire';
+  addContainerBorder('fire');
 }
 
 function toggleWater() {
-  memeImg.className = 'border-water';
+  addContainerBorder('water');
 }
 
 function toggleEarth() {
-  memeImg.className = 'border-earth';
+  addContainerBorder('earth');
 }
 
 const buttonFire = document.getElementById('fire');
@@ -46,7 +61,7 @@ buttonEarth.addEventListener('click', toggleEarth);
 const memes = document.querySelectorAll('.meme');
 for (let index = 0; index < memes.length; index += 1) {
   const meme = memes[index];
-  meme.addEventListener('click', function(event) {
+  meme.addEventListener('click', function (event) {
     memeImg.src = event.target.src;
-  })
+  });
 }
