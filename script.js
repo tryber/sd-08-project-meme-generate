@@ -9,11 +9,8 @@ function alteraTextoMeme() {
 
 function mostraImagemEscolhida() {
   const curlFiles = escolherImagem.files;
-
-  for (const file of curlFiles) {
-    const imagemEscolhida = URL.createObjectURL(file);
-    containerImagem.style.backgroundImage = `url('${imagemEscolhida}')`;
-  }
+  const imagemEscolhida = URL.createObjectURL(curlFiles[0]);
+  containerImagem.style.backgroundImage = `url('${imagemEscolhida}')`;
 }
 
 input.addEventListener('keyup', alteraTextoMeme);
