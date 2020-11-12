@@ -31,3 +31,7 @@ input {
   text-shadow: 5px 5px 5px black;
   word-break: break-all;
 }
+
+button {
+  margin: 5px;
+}
