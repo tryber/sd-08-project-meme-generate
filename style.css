@@ -12,10 +12,11 @@
   font-size: 30px;
   height: 100%;
   position: absolute;
-  text-shadow: 5px 5px 5px black;
   text-align: center;
+  text-shadow: 5px 5px 5px black;
   width: 100%;
 }
+
 .meme-image-container img {
   display: block;
   height: 100%;
@@ -46,6 +47,5 @@
 
 .famous-memes img {
   display: inline-block;
-
   width: 25%;
 }
