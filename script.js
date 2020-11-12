@@ -44,13 +44,13 @@ document.getElementById("earth").addEventListener("click",bordaEarth);
 
 function escolheMemesProntos (event) {
     if (event.target === document.querySelectorAll(".meme-pronto")[0]){
-        imageMeme.src = "meme1.jpg";
+        imageMeme.src = "imgs/meme1.png";
     } else if  (event.target === document.querySelectorAll(".meme-pronto")[1]) {
-        imageMeme.src = "meme2.jpeg";
+        imageMeme.src = "imgs/meme2.png";
     } else if (event.target === document.querySelectorAll(".meme-pronto")[2]) {
-        imageMeme.src = "meme3.jpg";
+        imageMeme.src = "imgs/meme3.png";
     } else if (event.target === document.querySelectorAll(".meme-pronto")[3]) {
-        imageMeme.src = "meme4.jpg";
+        imageMeme.src = "imgs/meme4.png";
     }
 }
 document.querySelector(".meme-pronto-container").addEventListener("click",escolheMemesProntos);
