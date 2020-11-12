@@ -15,7 +15,7 @@ function alteraTextoMeme() {
 
 function mostraImagemEscolhida() {
   imagemEscolhida = URL.createObjectURL(escolherImagem.files[0]);
-  containerImagem.style.backgroundImage = `url('${imagemEscolhida}')`;
+  containerImagem.src = imagemEscolhida;
 }
 
 function trocaBordaContainer(evento) {
@@ -38,7 +38,7 @@ function trocaBordaContainer(evento) {
 }
 
 function selecionaMeme(event) {
-  containerImagem.style.backgroundImage = `url('${event.target.src}')`;
+  containerImagem.src = event.target.src;
   imagemEscolhida = '';
 }
 
