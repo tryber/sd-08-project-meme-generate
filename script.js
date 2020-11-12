@@ -12,7 +12,7 @@ imageInput.addEventListener('change', (event) => {
   memeImage.src = URL.createObjectURL(event.target.files[0]);
   memeImage.onload = function () {
     URL.revokeObjectURL(imageInput.src);
-  }
+  };
 });
 
 // Botões de estilo
@@ -28,13 +28,13 @@ buttonsContainer.addEventListener('click', (event) => {
   if (event.target.id === 'earth') {
     memeContainer.style.border = '6px groove green';
   }
-})
+});
 
 // Exemplos de meme
 const samples = document.querySelector('.meme-samples');
 for (let memeNumber = 1; memeNumber <= 4; memeNumber += 1) {
   const images = document.createElement('img');
-  images.className = `meme-${memeNumber}`;
+  images.id = `meme-${memeNumber}`;
   images.src = `/imgs/meme${memeNumber}.png`;
   images.width = 100;
   images.height = 100;
@@ -44,9 +44,9 @@ for (let memeNumber = 1; memeNumber <= 4; memeNumber += 1) {
 // Adiciona o exemplo no container
 samples.addEventListener('click', (event) => {
   for (let memeNumber = 1; memeNumber <= 4; memeNumber += 1) {
-    if (event.target.classList.contains(`meme-${memeNumber}`)) {
+    if (event.target.id === `meme-${memeNumber}`) {
       const memeImage = document.getElementById('meme-image');
       memeImage.src = `/imgs/meme${memeNumber}.png`;
     }
   }
-})
+});
