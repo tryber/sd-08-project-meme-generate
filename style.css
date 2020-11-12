@@ -1,0 +1,13 @@
+#meme-image-container {
+    width: 500px;
+}
+
+#meme-image {
+    z-index: 1;
+}
+
+#meme-text {
+    text-align: center;
+    margin-top: -50px;
+    z-index: 2;
+}
