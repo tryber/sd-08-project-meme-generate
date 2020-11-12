@@ -6,4 +6,4 @@ function changeMemeText() {
   memeText.textContent = text;
 }
 
-textInput.addEventListener("keydown", changeMemeText)
+textInput.addEventListener("input", changeMemeText)
