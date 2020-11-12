@@ -25,14 +25,49 @@ span {
   text-shadow: 5px 5px 5px black;
 }
 
+button {
+  padding: 10px;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
 .fire {
-  border: 3px dashed red;
+  background-color: red;
 }
 
 .water {
-  border: 5px double blue;
+  background-color: blue;
 }
 
 .earth {
-  border: 6px groove brown;
+  background-color: green;
+}
+
+.border-fire {
+  border: 3px dashed red;
+}
+
+.border-water {
+  border: 5px double blue;
+}
+
+.border-earth {
+  border: 6px groove green;
+}
+
+.meme-options {
+  display: flex;
+  flex-direction: row;
+}
+
+.meme {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.meme:hover {
+  cursor: pointer;
 }

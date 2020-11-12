@@ -23,15 +23,15 @@ imgInput.addEventListener('change', function (event) {
 });
 
 function toggleFire() {
-  memeImg.className = 'fire';
+  memeImg.className = 'border-fire';
 }
 
 function toggleWater() {
-  memeImg.className = 'water';
+  memeImg.className = 'border-water';
 }
 
 function toggleEarth() {
-  memeImg.className = 'earth';
+  memeImg.className = 'border-earth';
 }
 
 const buttonFire = document.getElementById('fire');
@@ -42,3 +42,11 @@ buttonWater.addEventListener('click', toggleWater);
 
 const buttonEarth = document.getElementById('earth');
 buttonEarth.addEventListener('click', toggleEarth);
+
+const memes = document.querySelectorAll('.meme');
+for (let index = 0; index < memes.length; index += 1) {
+  const meme = memes[index];
+  meme.addEventListener('click', function(event) {
+    memeImg.src = event.target.src;
+  })
+}
