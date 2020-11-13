@@ -8,13 +8,32 @@
   </head>
   <body>
     <header>
-      <input id="text-input" type="text" name="text-input" />
-      <button id="file-image">Carregue imagem</button>
-      <input type="file" name="`meme-insert" id="`meme-insert" />
+      <h1>Meme generator!</h1>
+      <div>
+        <input
+          id="text-input"
+          type="text"
+          name="text-input"
+          maxlength="60"
+          placeholder="Insira seu texto aqui..."
+        />
+        <button id="file-image">Carregue imagem</button>
+        <input
+          type="file"
+          name="meme-insert"
+          style="display: none;"
+          id="meme-insert"
+        />
+      </div>
     </header>
     <section id="meme-image-container" class="container-mame">
       <span id="meme-text"></span>
-      <img id="meme-image" src="" alt="" />
+      <img
+        id="meme-image"
+        src=""
+        alt="Aqui vai esta sua imagem meme"
+        style="display: none;"
+      />
     </section>
     <script src="script.js"></script>
   </body>
