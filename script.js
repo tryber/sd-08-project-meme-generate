@@ -13,7 +13,6 @@ function uploadImageMeme() {
   localeMemeInsert.click();
 }
 function previewFile(change) {
-  console.log(change);
   const file = change.target.files.item(0);
   const reader = new FileReader();
   reader.onloadend = () => {
@@ -27,39 +26,43 @@ function insertTextMeme(get) {
   localeMemeText.innerText = newTextInsert;
 }
 function styleBorderMeme(pixel, type, color) {
-  console.log(`${pixel}px ${type} ${color}`);
   localeMemeImageContainer.style.border = `${pixel}px ${type} ${color}`;
 }
-function toggleImageMeme (src){
+function toggleImageMeme(src) {
   localeMemeImage.style.display = 'block';
   const fileImage = src.target;
-  switch(fileImage.id) {
+  switch (fileImage.id) {
     case 'meme-1':
       localeMemeImage.src = fileImage.src;
+      break;
     case 'meme-2':
       localeMemeImage.src = fileImage.src;
+      break;
     case 'meme-3':
       localeMemeImage.src = fileImage.src;
+      break;
     case 'meme-4':
       localeMemeImage.src = fileImage.src;
+      break;
     default:
       localeMemeImage.src = fileImage.src;
+      break;
   }
 }
 
 localeTextInput.addEventListener('keyup', insertTextMeme);
 localeMemeInsert.addEventListener('change', previewFile);
 localeMemeInsert.addEventListener('change', previewFile);
-localeButtonStyleEarth.addEventListener('click', ()=>{
-  styleBorderMeme(6, 'groove', 'green')
+localeButtonStyleEarth.addEventListener('click', () => {
+  styleBorderMeme(6, 'groove', 'green');
 });
-localeButtonStyleFire.addEventListener('click', ()=>{
-  styleBorderMeme(3,'dashed', 'red')
+localeButtonStyleFire.addEventListener('click', () => {
+  styleBorderMeme(3, 'dashed', 'red');
 });
 localeButtonFileImage.addEventListener('click', uploadImageMeme);
-localeButtonStyleWater.addEventListener('click', ()=>{
-  styleBorderMeme(5,'double', 'blue')
+localeButtonStyleWater.addEventListener('click', () => {
+  styleBorderMeme(5, 'double', 'blue');
 });
-localeMemeImageOption.forEach((element)=>{
-  element.addEventListener('click', toggleImageMeme)
+localeMemeImageOption.forEach((element) => {
+  element.addEventListener('click', toggleImageMeme);
 });
