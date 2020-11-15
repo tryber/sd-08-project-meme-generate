@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Em outras palavras, um meme generator!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="imgs/logo.png" alt="Boneco do meme logo">
+      <h1>Meme generator!</h1>
+      <div>
+        <input
+          id="text-input"
+          type="text"
+          name="text-input"
+          maxlength="60"
+          placeholder="Insira seu texto aqui..."
+        />
+        <button id="file-image">Carregue imagem</button>
+        <button class="red" id="fire">Fire</button>
+        <button class="blue" id="water">Water</button>
+        <button class="green" id="earth">Earth</button>
+        <input
+          type="file"
+          name="meme-insert"
+          style="display: none;"
+          id="meme-insert"
+        />
+      </div>
+    </header>
+    <section id="meme-container" class="meme-container">
+
+      <div id="meme-image-container" class="meme-image-container">
+        <span id="meme-text"></span>
+        <img
+        id="meme-image"
+        src=""
+        alt="Aqui vai esta sua imagem meme"
+        style="display: none;"
+        draggable="false"/>
+      </div>
+      <div id="meme-image-option" class="meme-image-option">
+        <img id="meme-1" src="imgs/meme1.png"Criança com cara de choro " draggable="false">
+        <img id="meme-2" src="imgs/meme2.png" alt="Casal passando e o homem olha para outra garota " draggable="false">
+        <img id="meme-3" src="imgs/meme3.png" alt="Criança no carro sentada no banco do carona com cara de desconfiaça " draggable="false">
+        <img id="meme-4" src="imgs/meme4.png" alt="Homem com a boca muito aberta gritando " draggable="false">
+        <img id="meme-5" src="imgs/meme5.png" alt="Homem indicando com o dedo apontando para o cerebro " draggable="false">
+      </div>
+
+    </section>
+      <script src="script.js"></script>
+  </body>
+</html>

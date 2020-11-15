@@ -1,0 +1,111 @@
+body {
+  background-color: rgb(246 , 248 , 250);
+  font-family: sans-serif;
+}
+
+input , button {
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+button {
+  background-color: rgb(55 , 155 , 83);
+  color: white;
+  font-size: 14px;
+  height: 25px;
+  padding: 0 10px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: rgb(0 , 99 , 28);
+  box-shadow: 0 4px 5px black;
+}
+
+header {
+  align-items: center;
+  background-color: rgb(36 , 41 , 46);
+  display: flex;
+  height: 30px;
+  padding: 15px;
+  width: 100%;
+}
+
+header img {
+  width: 60px;
+}
+
+h1 {
+  color: white;
+  font-family: Monoton , cursive;
+  font-size: 22px;
+  margin-right: 30px;
+}
+
+input {
+  height: 25px;
+  padding-left: 5px;
+}
+
+.meme-container {
+  display: flex;
+}
+
+.meme-image-container {
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 1px 0 3px black;
+  height: 350px;
+  margin: 15px;
+  position: relative;
+  width: 350px;
+}
+
+.meme-image-container span {
+  color: white;
+  font-size: 30px;
+  left: 10%;
+  position: absolute;
+  text-shadow: 5px 5px 5px black;
+  top: 80%;
+}
+
+.meme-image-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.meme-image-option {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.meme-image-option img {
+  display: flex;
+  height: 60px;
+  margin-bottom: 12.5px;
+  width: 120px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.blue:hover {
+  background-color: aquamarine;
+  box-shadow: 0 4px 5px black;
+}
+
+.red {
+  background-color: red;
+}
+
+.red:hover {
+  background-color: rosybrown;
+  box-shadow: 0 4px 5px black;
+}
+
+.green {
+  background-color: green;
+}
