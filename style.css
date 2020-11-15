@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
 body {
   background-color: rgb(246 , 248 , 250);
   font-family: sans-serif;
 }
 
 input , button {
-  border: 1px solid rgb(0 , 99 , 28);
+  border: 1px solid black;
   border-radius: 4px;
 }
 
@@ -23,14 +25,18 @@ button:hover {
 }
 
 header {
+  width: 100%;
   align-items: center;
   background-color: rgb(36 , 41 , 46);
   display: flex;
   height: 30px;
   padding: 15px;
 }
-
+header img {
+  width: 60px;
+}
 h1 {
+  font-family: 'Monoton', cursive;
   color: white;
   font-size: 22px;
   margin-right: 30px;
@@ -41,7 +47,11 @@ input {
   padding-left: 5px;
 }
 
-.container-mame {
+.meme-container {
+  display: flex;
+}
+
+.meme-image-container {
   background-color: white;
   border: 1px solid black;
   box-shadow: 1px 0 3px black;
@@ -51,7 +61,7 @@ input {
   width: 350px;
 }
 
-.container-mame span {
+.meme-image-container span {
   color: white;
   font-size: 30px;
   left: 10%;
@@ -60,7 +70,41 @@ input {
   top: 80%;
 }
 
-.container-mame img {
+.meme-image-container img {
   height: 100%;
   width: 100%;
+}
+
+.meme-image-option {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.meme-image-option img{
+  display: flex;
+  height: 60px;
+  margin-bottom: 12.5px;
+  width: 120px;
+}
+
+.blue {
+  background-color: blue;
+}
+.blue:hover {
+  background-color: aquamarine;
+  box-shadow: 0 4px 5px black;
+}
+
+.red {
+  background-color: red;
+}
+
+.red:hover {
+  background-color: rosybrown;
+  box-shadow: 0 4px 5px black;
+}
+
+
+.green{
+  background-color: green;
 }
