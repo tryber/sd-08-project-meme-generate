@@ -1,12 +1,14 @@
 .container {
   background-color: white;
   border: 1px solid black;
+  height: 400px;
   position: relative;
+  width: 400px;
 }
 
 .meme-text {
   color: white;
   font-size: 30px;
-  text-shadow: rgb(0, 0, 0) 5px 5px 5px;
   position: absolute;
+  text-shadow: rgb(0, 0, 0) 5px 5px 5px;
 }
