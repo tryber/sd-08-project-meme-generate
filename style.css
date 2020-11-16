@@ -17,10 +17,11 @@
     position: absolute;
     bottom: 5px;
     color: #fff;
-    font-size: 32px;
+    font-size: 42px;
     font-weight: bold;;
     z-index: 2;
     width: 500px;
     text-align: center;
     word-wrap: break-word;
+    text-shadow: 3px 3px #000;
 }
