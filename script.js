@@ -1,7 +1,7 @@
 // DEFINES SELECTORS
 const textInput = document.querySelector('#text-input');
 const textMeme = document.querySelector('#meme-text');
-const container = document.querySelector('.container');
+// const container = document.querySelector('.container');
 const imageInput = document.querySelector('#meme-insert');
 const image = document.querySelector('#meme-image');
 
