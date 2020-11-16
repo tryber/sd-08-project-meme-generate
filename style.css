@@ -18,5 +18,10 @@
 
 #meme-image {
   position: relative;
+  width: auto;
+  height: auto;
 }
 
+#buttons-container {
+    margin-top: 860px;
+}
