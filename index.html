@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Meme Generator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Meme Generator</h1>
-    </header>
-    <input type="text" id="text-input">
-    <section id="meme-image-container">
-        <p id="meme-text"></p>
-    </section>
-    <script src="script.js"></script>
+  <header>
+      <h1>Meme Generator</h1>
+  </header>
+  <input type="text" id="text-input">
+  <input type="file" id="meme-insert" accept="image" onchange="carregaImagem(event)">
+  <div id="meme-image-container">
+      <img id="meme-image" src="https://static.sbt.com.br/media/playlist/20100209115700/20100209115717/20151126161158.jpg">
+  </div>
+  <p id="meme-text"></p>
+  <script src="script.js"></script>
 </body>
 </html>
