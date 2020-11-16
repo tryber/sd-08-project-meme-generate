@@ -24,7 +24,7 @@ const originalBorder = () => {
   ];
 
   return original;
-}
+};
 
 const blueBorder = () => {
   const blue = [
