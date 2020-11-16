@@ -1,10 +1,11 @@
 #meme-text {
   color: white;
   position: absolute;
-  font-size: 40px;
+  font-size: 30px;
   font-family: sans-serif;
   font-weight: 1000;
   z-index: 2;
+  text-shadow: 5px 5px 5px black;
 }
 
 #meme-image-container {
