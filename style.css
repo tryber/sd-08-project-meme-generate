@@ -44,9 +44,9 @@ div {
 input[type=text] , input[type=email]{
     border: 1px solid rgb(187, 175, 175);
     border-radius: 4px;
-    display: block;
+    display: inline-block;
     height: 30px;
-    margin: 3px 1px 10px 10px;
+    margin: 5px;
     outline: none;
     padding: 2px;
     width: 98%;
@@ -67,10 +67,9 @@ input[type=date]:hover {
 
 label {
     color: white;
-    display: block;
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 25%;
+    display:inline-block;
+    margin: 5px;
+    width: auto;
 }
 
 select {
@@ -115,14 +114,8 @@ button:hover {
 }
 /* -------------------------------------- */
 
-#input-container {
-    margin-left: 5px;
-    position: absolute;
-    width: 49%;
-}
-
 #text-input {
-    width: 60%;
+    width: 40%;
 }
 
 #meme-image-container {
@@ -137,6 +130,7 @@ button:hover {
 }
 
 #meme-text {
+    
     border: 1px solid black;
     bottom: 25%;
     left: 5%;
@@ -144,6 +138,9 @@ button:hover {
     padding: 5px;
     position: absolute;
     width: 90%;
+    /* white-space: pre-line;                 */
+    word-wrap: break-word;
+    overflow: hidden;
 }
 
 #meme-img {
@@ -163,4 +160,5 @@ button:hover {
     margin: 10px;
     padding: 5px 5px;
     width: 160px;
+    text-align: center;
 }

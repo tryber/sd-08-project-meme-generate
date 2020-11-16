@@ -11,10 +11,14 @@ function loadFile() {
     let getElementImg = document.getElementById('meme-img'); 
     inputElement.addEventListener("change", function() {
         const fileList = this.files[0]; /* now you can work with the file list */
-        const objectURL = window.URL.createObjectURL(fileList);
-        getElementImg.src = objectURL;
-        getElementImg.onload = () => URL.revokeObjectURL(this.src);
-        console.log(objectURL);
+        if(fileList !== undefined){
+            const objectURL = window.URL.createObjectURL(fileList);
+            getElementImg.src = objectURL;
+            getElementImg.onload = () => URL.revokeObjectURL(this.src);
+            console.log(objectURL);
+        }else {
+            alert('ERRO!!!!!')
+        }
     })
 }
 
