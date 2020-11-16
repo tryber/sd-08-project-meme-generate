@@ -1,9 +1,9 @@
 .container {
   background-color: white;
   border: 1px solid black;
-  height: 400px;
+  height: fit-content;
   position: relative;
-  width: 400px;
+  width: fit-content;
 }
 
 .meme-text {
