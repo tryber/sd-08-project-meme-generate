@@ -8,7 +8,7 @@ function insertText() {
 
 function loadFile() {
     let inputElement = document.getElementById("meme-insert");
-    let getElementImg = document.getElementById('meme-img'); 
+    let getElementImg = document.getElementById('meme-image'); 
     inputElement.addEventListener("change", function() {
         const fileList = this.files[0]; /* now you can work with the file list */
         if(fileList !== undefined){
