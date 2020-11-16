@@ -9,9 +9,10 @@
 
 #meme-image-container {
   position: absolute;
-  background-color: aliceblue;
+  background-color: white;
   width: fit-content;
   height: fit-content;
+  border: solid black 1px;
 }
 
 #meme-image {
