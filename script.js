@@ -7,10 +7,14 @@ function insertText() {
 }
 
 function loadFile() {
-    const inputElement = document.getElementById("meme-insert");
+    let inputElement = document.getElementById("meme-insert");
+    let getElementImg = document.getElementById('meme-img'); 
     inputElement.addEventListener("change", function() {
-        const fileList = this.files; /* now you can work with the file list */
-        console.log(fileList);
+        const fileList = this.files[0]; /* now you can work with the file list */
+        const objectURL = window.URL.createObjectURL(fileList);
+        getElementImg.src = objectURL;
+        getElementImg.onload = () => URL.revokeObjectURL(this.src);
+        console.log(objectURL);
     })
 }
 
