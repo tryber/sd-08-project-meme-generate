@@ -19,7 +19,7 @@ function changeImage(input) {
         reader = new FileReader();
 
         reader.onload = function (e) {
-            meme_image_img.setAttribute('src', e.target.result);
+            meme_image_img.style.backgroundImage = "url(" + e.target.result; + ")";
         }
 
         reader.readAsDataURL(input.files[0]);

@@ -6,16 +6,18 @@
 }
 
 #meme-image {
+    position: relative;
     z-index: 1;
     border: 1px solid #000;
     background-color: #fff;
     width: 500px;
     height: 700px;
+    background-size: cover;
 }
 
 #meme-text {
     position: absolute;
-    bottom: 5px;
+    bottom: 75px;
     color: #fff;
     font-size: 42px;
     font-weight: bold;;
