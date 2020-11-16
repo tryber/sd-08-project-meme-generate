@@ -55,9 +55,9 @@ const changeBorder = (type) => {
 
 changeBorder(originalBorder());
 
-waterButton.addEventListener('click', () => changeLayout(blueBorder()));
-fireButton.addEventListener('click', () => changeLayout(redBorder()));
-earthButton.addEventListener('click', () => changeLayout(greenBorder()));
+waterButton.addEventListener('click', () => changeBorder(blueBorder()));
+fireButton.addEventListener('click', () => changeBorder(redBorder()));
+earthButton.addEventListener('click', () => changeBorder(greenBorder()));
 
 // const loadImage = (event) => {
 //   if (event.target.src) {
