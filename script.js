@@ -7,6 +7,7 @@ const image = document.querySelector('#meme-image');
 const waterButton = document.querySelector('#water');
 const fireButton = document.querySelector('#fire');
 const earthButton = document.querySelector('#earth');
+const memes = document.querySelector('.memes-container');
 
 
 textInput.addEventListener('keyup', () => {
@@ -59,8 +60,8 @@ waterButton.addEventListener('click', () => changeBorder(blueBorder()));
 fireButton.addEventListener('click', () => changeBorder(redBorder()));
 earthButton.addEventListener('click', () => changeBorder(greenBorder()));
 
-// const loadImage = (event) => {
-//   if (event.target.src) {
-//     image.src = event.target.src;
-//   }
-// };
+memes.addEventListener('click', (event) => {
+  if (event.target.src) {
+    image.src = event.target.src;
+  }
+});

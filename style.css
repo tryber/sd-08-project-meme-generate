@@ -24,3 +24,8 @@
 .earth {
   background-color: green;
 }
+
+.memes-container img {
+  height: 100px;
+  width: 100px;
+}
