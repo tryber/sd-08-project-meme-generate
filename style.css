@@ -1,0 +1,36 @@
+.container {
+  background-color: white;
+  border: 1px solid black;
+  height: 400px;
+  position: relative;
+  width: 400px;
+}
+
+.meme-image {
+  height: 400px;
+  width: 400px;
+}
+
+.meme-text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  text-shadow: black 5px 5px 5px;
+}
+
+.water {
+  background-color: blue;
+}
+
+.fire {
+  background-color: red;
+}
+
+.earth {
+  background-color: green;
+}
+
+.memes-container img {
+  height: 100px;
+  width: 100px;
+}
