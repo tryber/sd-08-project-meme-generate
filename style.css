@@ -12,3 +12,15 @@
   position: absolute;
   text-shadow: black 5px 5px 5px;
 }
+
+.water {
+  background-color: blue;
+}
+
+.fire {
+  background-color: red;
+}
+
+.earth {
+  background-color: green;
+}
