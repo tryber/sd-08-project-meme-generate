@@ -1,13 +1,26 @@
 #meme-image-container {
     width: 500px;
+    height: 700px;
+    border: 1px solid #000;
+    background-color: #fff;
 }
 
 #meme-image {
     z-index: 1;
+    border: 1px solid #000;
+    background-color: #fff;
+    width: 500px;
+    height: 700px;
 }
 
 #meme-text {
-    text-align: center;
-    margin-top: -50px;
+    position: absolute;
+    bottom: 5px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;;
     z-index: 2;
+    width: 500px;
+    text-align: center;
+    word-wrap: break-word;
 }
