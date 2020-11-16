@@ -7,12 +7,11 @@ function insertText() {
 }
 
 function loadFile() {
-    var reader = new FileReader();
-    reader.onload = function () {
-        var output = document.getElementById('output_image');
-        output.src = reader.result;
-    }
-    reader.readAsDataURL(event.target.files[0]);
+    const inputElement = document.getElementById("meme-insert");
+    inputElement.addEventListener("change", function() {
+        const fileList = this.files; /* now you can work with the file list */
+        console.log(fileList);
+    })
 }
 
 
