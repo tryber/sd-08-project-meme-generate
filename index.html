@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
-        <input type="text" id="text-input">
-        <input type="file" id="meme-insert">
-    </form>
+    <div class="others">
+        <input type="text" id="text-input" maxlength="60">
+        <input type="file" accept="image/*" id="meme-insert">
+    </div>
     <div id="meme-image-container">
-        <p id="meme-text" class="text"></p>
+        <div id="meme-text" class="text"></div>
         <img id="meme-image" src=""/>
     </div>
     <script src="script.js"></script>

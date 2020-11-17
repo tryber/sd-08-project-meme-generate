@@ -5,7 +5,6 @@ function preview(event) {
 
 function text(){
   textInput = document.querySelector('#text-input')
-  textMeme = document.querySelector('#meme-text')
   textInput.addEventListener('keyup', ()=>{
   textMeme.innerHTML = textInput.value;
   })
@@ -13,6 +12,9 @@ function text(){
 text()
 window.onload = function() {
   const xablau = document.querySelector('#meme-insert')
+  textMeme = document.querySelector('#meme-text')
+
+  textMeme.addEventListener('keyup', text)
   xablau.addEventListener('change' , preview);
 }
 
