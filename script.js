@@ -18,11 +18,13 @@ function textDinamicInput() {
 textDinamicInput();
 
 function imgShow() {
-  imgUpload.addEventListener('click', function () {
-    imgMeme.src = imgMeme.value;
-  });
+imgUpload.addEventListener('change', function (event) {
+  imgMeme.src = URL.createObjectURL(event.target.files[0]);
+});
 }
 imgShow();
+
+
 
 function borderFire () {
 fireButton.addEventListener('click', function () {
