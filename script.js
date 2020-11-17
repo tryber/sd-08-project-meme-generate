@@ -28,6 +28,25 @@ function changeBorderToEarth() {
   memeContainer.style.border = '6px groove green';
 }
 
+function generateReadyMemes() {
+  const readyContainer = document.getElementById('ready-container');
+  const image = document.getElementById('meme-image');
+
+  for (let i = 1; i <= 4; i += 1) {
+    const littleImg = document.createElement('img');
+    littleImg.src = `imgs/meme${i}.png`;
+    const divMeme = document.createElement('div');
+    divMeme.className = 'readyMemes';
+    divMeme.id = `meme-${i}`;
+    divMeme.appendChild(littleImg);
+    divMeme.addEventListener('click', () => {
+      image.src = `imgs/meme${i}.png`;
+    });
+
+    readyContainer.appendChild(divMeme);
+  }
+}
+
 window.onload = () => {
   const inputImgFile = document.getElementById('meme-insert');
   inputImgFile.addEventListener('change', getImage);
@@ -46,4 +65,6 @@ window.onload = () => {
   const earthBtn = document.getElementById('earth');
   earthBtn.style.backgroundColor = 'green';
   earthBtn.addEventListener('click', changeBorderToEarth);
+
+  generateReadyMemes();
 };
