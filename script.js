@@ -7,3 +7,13 @@ function addText () {
   });
 }
 addText();
+
+// Requisito 02 - O site deve permitir que quem usa faça upload de uma imagem de seu computador.
+function addImage () {
+  let memeInsert = document.querySelector('#meme-insert');
+  memeInsert.addEventListener('change', function(event) {
+    let img = document.querySelector('#meme-image');
+    img.src = URL.createObjectURL(event.target.files[0]);
+  });
+}
+addImage();
