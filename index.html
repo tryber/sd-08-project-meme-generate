@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Meme-generator</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header>
-        <label for="text-input">Frase do meme-generator</label>
-        <input type="text" name="meme-gen-text" id="text-input" placeholder="Insira seu Texto aqui" maxlength="60">
-        <label for="img-upload">Upload de imagem</label>
-        <input type="file" name="meme-gen-img" id="img-upload">
+      <label for="text-input">Frase do meme-generator</label>
+      <input
+        type="text"
+        name="meme-gen-text"
+        id="text-input"
+        placeholder="Insira seu Texto aqui"
+        maxlength="60"
+      />
+      <label for="img-upload">Upload de imagem</label>
+      <input type="file" name="meme-gen-img" id="meme-insert" />
     </header>
-        <main>
-        <section id="meme-image-container" class='image-container'>
-            <div id='meme-text'></div>
-            <div id='meme-image'></div>
-            <div id='meme-insert'></div>
-        </section>
+    <main>
+      <section id="button-container">Alterar a borda?
+      <button id='fire'>Fire Border!</button>
+      <button id='water'>Water Border!</button>
+      <button id='earth'>Earth Border!</button>
+      <button id='normal'>Normal Border</button>
+      </section>
+      <section id="meme-image-container" class="image-container">
+        <div id="meme-text"></div>
+        <div id="meme-image"></div>
+      </section>
     </main>
-</body>
-<script src='script.js'></script>
+  </body>
+  <script src="./script.js"></script>
 </html>
