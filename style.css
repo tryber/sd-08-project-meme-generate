@@ -16,6 +16,7 @@
   height: fit-content;
   border: solid black 1px;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 #meme-image {
