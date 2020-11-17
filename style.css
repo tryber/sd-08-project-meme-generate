@@ -1,0 +1,16 @@
+#imagem{
+    border: solid 1px black;
+    width: 300px;
+    height: 300px;
+    position: relative;
+  
+}
+.text{
+    position: absolute;
+    bottom: 680px;
+    max-width: 300px;
+    max-height: 300px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 5px black;  
+}
