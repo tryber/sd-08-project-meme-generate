@@ -30,6 +30,6 @@ function changeBorder(event) {
     }
 
     if (event.target.innerText == "Earth") {
-        meme_image_container.style.border = '6px groove blue';
+        meme_image_container.style.border = '6px groove green';
     }
 }
