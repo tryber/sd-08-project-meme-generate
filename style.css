@@ -1,0 +1,35 @@
+img {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+button {
+  margin-top: 5px;
+}
+
+.container {
+  background-color: white;
+  border: 1px solid black;
+  height: 400px;
+  margin-top: 30px;
+  max-width: 800px;
+  position: relative;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  margin: 250px 10px 0;
+  overflow-wrap: break-word;
+  position: absolute;
+  text-shadow: 5px 5px 5px black;
+  top: 0;
+  width: 90%;
+}
+
+.readyMemes {
+  border: 1px solid black;
+  height: 60px;
+  width: 60px;
+}
