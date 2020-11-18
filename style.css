@@ -21,9 +21,11 @@
 #meme-text {
   position: absolute;
   color: white;
-  border: 1px dashed red;
   width: 380px;
   height: 50px;
   margin-bottom: 10px;
   align-self: flex-end;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  text-align: center;
 }
