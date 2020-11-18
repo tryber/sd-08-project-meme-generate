@@ -1,0 +1,85 @@
+body {
+  background-color: orange;
+}
+
+#prememes {
+  float: right;
+  border: 5px solid blue;
+  width: 300px;
+  height: 300px;
+}
+
+.image-container {
+  display: flex;
+  width: 450px;
+  height: 450px;
+  max-width: 450px;
+  max-height: 450px;
+  flex-flow: row wrap;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#meme-image {
+    display: flex;
+    flex-wrap: wrap;
+  width: 450px;
+  height: 450px;
+}
+
+#meme-text {
+  margin-top: 400px;
+  max-width: 200px;
+  font-size: 30px;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+}
+
+#button-container {
+  font-size: large;
+  display: flex;
+  width: 70%;
+  height: 50px;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: grey;
+  border: 5px dotted white;
+  margin: 10px;
+}
+
+#fire {
+  background-color: rgb(255, 0, 0);
+  color: orange;
+}
+
+#water {
+background-color: rgb(0, 0, 255);
+color: mediumaquamarine;
+}
+
+#earth {
+background-color: rgb(0, 128, 0);
+color: brown;
+}
+
+
+.prememes {
+    
+    display: flex;
+  background-color: greenyellow;
+    width: 600px;
+    border: 5px solid blue;
+    color: purple;
+    justify-content: space-between;
+    margin: 10px;
+    flex-flow: row wrap;
+}
+
+.memes {
+    border: 3px dashed black;
+    background-color: aliceblue;
+    margin: 5px;
+    padding: 1px;
+    width: 100px;
+}
