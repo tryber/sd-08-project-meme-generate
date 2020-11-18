@@ -10,13 +10,27 @@
 
 <body>
     <h1>MEME GENERATOR</h1>
-    <input type="text" id="text-input" maxlength="60">
+    <label for="meme-text">Texto do meme: 
+        <input type="text" name='meme-text' id="text-input" maxlength="60">
+    </label>
     <input type="file" accept="image/*" id="meme-insert" onchange="handleFiles(event)">
+    
     <div id="meme-image-container">
         <img src="" alt="" id="meme-image">
         <p id="meme-text"></p>
     </div>
-    <script src="./script.js"></script>
+    <section class="buttons">
+        <button id="fire">Fire</button>
+        <button id='water'>Water</button>
+        <button id='earth'>Earth</button>
+        <script src="./script.js"></script>
+    </section>
+    <section class='memes-template-container'>
+        <img class="meme-template" src="./imgs/meme1.png" alt="">
+        <img class="meme-template" src="./imgs/meme2.png" alt="">
+        <img class="meme-template" src="./imgs/meme3.png" alt="">
+        <img class="meme-template" src="./imgs/meme4.png" alt="">
+    </section>
 </body>
 
 </html>

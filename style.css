@@ -1,3 +1,7 @@
+* {
+    margin-bottom: 5px;
+}
+
 body{
     box-sizing: border-box;
 }
@@ -31,4 +35,13 @@ body{
 
 #meme-insert{
     display: block;
+}
+
+.memes-template-container{
+    display: inline;
+}
+
+.memes-template-container img {
+    width: 150px;
+    height: 150px;
 }
