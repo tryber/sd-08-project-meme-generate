@@ -28,14 +28,14 @@ imgShow();
 
 function borderFire () {
 fireButton.addEventListener('click', function () {
-    imgContainer.style.border = '3px solid red';
+    imgContainer.style.border = '3px dashed red';
 })
 }
 borderFire()
 
 function borderIce () {
 waterButton.addEventListener('click', function () {
-    imgContainer.style.border = '3px solid blue';
+    imgContainer.style.border = '5px double blue';
 })
 }
 
@@ -43,7 +43,7 @@ borderIce()
 
 function borderEarth () {
 earthButton.addEventListener('click', function () {
-    imgContainer.style.border = '3px solid brown';
+    imgContainer.style.border = '6px groove rgb(0, 128, 0)';
 })
 }
 borderEarth()
