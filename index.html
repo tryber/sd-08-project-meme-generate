@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
-
 <body>
     <h1>MEME GENERATOR</h1>
     <label for="meme-text">Texto do meme:
         <input type="text" name='meme-text' id="text-input" maxlength="60">
     </label>
-    <input type="file" accept="image/*" id="meme-insert" onchange="handleFiles(event)">
-
-    <div id="meme-image-container">
-        <img src="" alt="" id="meme-image">
-        <p id="meme-text"></p>
+    <input type="file" accept="image/*" id="meme-insert" class="meme-insert" onchange="handleFiles(event)">
+    <div id="meme-image-container" class="meme-image-container">
+        <img src="" alt="" id="meme-image" class="meme-image">
+        <p id="meme-text" class="meme-text"></p>
     </div>
     <section class="buttons">
         <button id="fire" class="fire">Fire</button>
@@ -32,5 +29,4 @@
         <img id="meme-4" class="meme-template" src="./imgs/meme4.png" alt="">
     </section>
 </body>
-
 </html>
