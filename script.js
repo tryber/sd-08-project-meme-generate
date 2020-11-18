@@ -10,7 +10,7 @@ function addListenerToTextToMeme() {
 
 function addEventHandler() {
   const getInput = document.querySelector('#meme-insert');
-  getInput.addEventListener('change', function () {
+  getInput.addEventListener('change', function (event) {
     img.setAttribute('src', '');
     img.src = URL.createObjectURL(event.target.files[0]);
     img.onload = function () {
