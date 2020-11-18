@@ -8,9 +8,9 @@ function addListenerToTextToMeme() {
   });
 }
 
-function addEventHandler(){
+function addEventHandler() {
   const getInput = document.querySelector('#meme-insert');
-  getInput.addEventListener('change', function() {
+  getInput.addEventListener('change', function () {
     img.setAttribute('src', '');
     img.src = URL.createObjectURL(event.target.files[0]);
     img.onload = function () {
