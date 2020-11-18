@@ -1,9 +1,8 @@
-* {
-    margin-bottom: 5px;
-}
-
 body{
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #select-img{
@@ -44,4 +43,16 @@ body{
 .memes-template-container img {
     width: 150px;
     height: 150px;
+}
+
+.fire {
+    background-color: red;
+}
+
+.water {
+    background-color: blue;
+}
+
+.earth {
+    background-color: green;
 }

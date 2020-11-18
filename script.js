@@ -1,11 +1,3 @@
-window.onload = starterFunctions;
-
-function starterFunctions() {
-  addListenerToTextToMeme();
-  addListenerToBorderButtons();
-  addListenerToMemeTemplate();
-}
-
 function addListenerToTextToMeme() {
   let textInput = document.querySelector('#text-input');
   let memeText = document.querySelector('#meme-text')
@@ -26,31 +18,34 @@ function handleFiles(event) {
 
 function addListenerToBorderButtons() {
   let buttonsId = ['#fire', '#water', '#earth'];
-
-  for(let index = 0; index < buttonsId.length; index += 1){
+  for (let index = 0; index < buttonsId.length; index += 1) {
     let currentButton = document.querySelector(buttonsId[index]);
-    currentButton.addEventListener('click', function(event){
+    currentButton.addEventListener('click', function (event) {
       let imgContainer = document.querySelector('#meme-image-container');
-      if(index == 0){
+      if (index == 0) {
         imgContainer.style.border = "3px dashed red";
-      }else if(index == 1){
+      } else if (index == 1) {
         imgContainer.style.border = "5px double blue";
-      }else if(index == 2){
+      } else if (index == 2) {
         imgContainer.style.border = "6px groove green";
       }
     })
   }
 }
 
-function addListenerToMemeTemplate(){
+function addListenerToMemeTemplate() {
   let memeTemplateContainer = document.querySelectorAll('.meme-template')
-
-  for(let index = 0; index < memeTemplateContainer.length; index += 1){
-    memeTemplateContainer[index].addEventListener('click', function(event){
+  for (let index = 0; index < memeTemplateContainer.length; index += 1) {
+    memeTemplateContainer[index].addEventListener('click', function (event) {
       let img = document.querySelector('#meme-image');
       let memeTemplate = event.target.src;
       img.src = memeTemplate;
     })
   }
+}
 
+window.onload = function() {
+  addListenerToTextToMeme();
+  addListenerToBorderButtons();
+  addListenerToMemeTemplate();
 }
