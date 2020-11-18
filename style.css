@@ -40,3 +40,12 @@
 #earth {
     background-color: green;
 }
+
+ul li{
+    display: inline-block;
+}
+
+ul li img {
+    width: 150px;
+    height: 150px;
+}
