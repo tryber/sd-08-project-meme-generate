@@ -17,7 +17,7 @@ function addEventHandler(){
       URL.revokeObjectURL(img.src); // free memory
     };
     /* now you can work with the file list https://developer.mozilla.org/pt-BR/docs/Web/API/File/Using_files_from_web_applications */
-  })
+  });
 }
 
 function addListenerToBorderButtons() {
