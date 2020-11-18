@@ -8,20 +8,23 @@ function addListenerToTextToMeme() {
   });
 }
 
-function handleFiles(event) {
-  img.setAttribute('src', '');
-  img.src = URL.createObjectURL(event.target.files[0]);
-  img.onload = function () {
-    URL.revokeObjectURL(img.src); // free memory
-  };
-  /* now you can work with the file list https://developer.mozilla.org/pt-BR/docs/Web/API/File/Using_files_from_web_applications */
+function addEventHandler(){
+  const getInput = document.querySelector('#meme-insert');
+  getInput.addEventListener('change', function() {
+    img.setAttribute('src', '');
+    img.src = URL.createObjectURL(event.target.files[0]);
+    img.onload = function () {
+      URL.revokeObjectURL(img.src); // free memory
+    };
+    /* now you can work with the file list https://developer.mozilla.org/pt-BR/docs/Web/API/File/Using_files_from_web_applications */
+  })
 }
 
 function addListenerToBorderButtons() {
   const buttonsId = ['#fire', '#water', '#earth'];
   for (let index = 0; index < buttonsId.length; index += 1) {
     const currentButton = document.querySelector(buttonsId[index]);
-    currentButton.addEventListener('click', function (event) {
+    currentButton.addEventListener('click', function () {
       const imgContainer = document.querySelector('#meme-image-container');
       if (index === 0) {
         imgContainer.style.border = '3px dashed red';
@@ -48,4 +51,5 @@ window.onload = function () {
   addListenerToTextToMeme();
   addListenerToBorderButtons();
   addListenerToMemeTemplate();
+  addEventHandler();
 };
