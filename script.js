@@ -17,3 +17,30 @@ function addImage () {
   });
 }
 addImage();
+
+function addBorderFire() {
+  let btnBorder = document.querySelector('#fire');
+  btnBorder.addEventListener('click', function () {
+    let imageContainer = document.querySelector('#meme-image-container');
+    imageContainer.style.border = '3px dashed red';
+  });
+}
+addBorderFire();
+
+function addBorderWater() {
+  let btnBorder = document.querySelector('#water');
+  btnBorder.addEventListener('click', function () {
+    let imageContainer = document.querySelector('#meme-image-container');
+    imageContainer.style.border = '5px double blue';
+  });
+}
+addBorderWater();
+
+function addBorderEarth() {
+  let btnBorder = document.querySelector('#earth');
+  btnBorder.addEventListener('click', function () {
+    let imageContainer = document.querySelector('#meme-image-container');
+    imageContainer.style.border = '6px groove green';
+  });
+}
+addBorderEarth();
