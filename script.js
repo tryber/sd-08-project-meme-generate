@@ -19,8 +19,9 @@ function addImage() {
 }
 addImage();
 
-// Requisito 06 - Permita a quem usa customizar o meme escolhido acrescentando a ele uma de três bordas.
-// A página deve ter três botões, que ao serem clicados devem cada um trocar a própria borda ao redor do container.
+// Requisito 06 - Permita a quem usa customizar o meme escolhido acrescentando
+// a ele uma de três bordas.A página deve ter três botões, que ao serem clicados
+// devem cada um trocar a própria borda ao redor do container.
 
 function addBorderFire() {
   const btnBorder = document.querySelector('#fire');
@@ -52,7 +53,7 @@ addBorderEarth();
 function addimageMeme() {
   const memeContainer = document.querySelector('.memes-prontos');
   memeContainer.addEventListener('click', function (event) {
-    document.querySelector('#meme-image').src =  event.target.src;
+    document.querySelector('#meme-image').src = event.target.src;
   });
 }
 addimageMeme();
