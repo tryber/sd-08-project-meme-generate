@@ -1,4 +1,4 @@
-#meme-image-container {
+.meme-image-container {
   align-items: center;
   background-color: white;
   border: 1px solid black;
@@ -10,14 +10,14 @@
   width: 400px;
 }
 
-#meme-image {
+.meme-image {
   background-color: white;
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-#meme-text {
+.meme-text {
   align-self: flex-end;
   color: white;
   font-size: 30px;
@@ -34,30 +34,31 @@ footer {
   border: 1px solid black;
 }
 
-div#buttons {
+.buttons {
   display: flex;
   justify-content: space-between;
   width: 400px;
 
 }
 
-#buttons button {
+.buttons button {
   height: 40px;
   margin: 5px 0;
   width: 120px;
 }
 
-#buttons img{
+.buttons img {
   width: 30px;
 }
-#fire {
+
+.fire {
   background-color: red;
 }
 
-#water {
+.water {
   background-color: blue;
 }
 
-#earth {
+.earth {
   background-color: green;
 }
