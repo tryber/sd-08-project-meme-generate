@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 .meme-image-container {
   align-items: center;
   background-color: white;
@@ -31,7 +35,11 @@
 }
 
 footer {
-  border: 1px solid black;
+  bottom: 0;
+  overflow: auto;
+  position: absolute;
+  width: 100%;
+  text-align: center;
 }
 
 .buttons {
