@@ -1,4 +1,4 @@
-html, body {
+html , body {
   height: 100%;
 }
 
@@ -38,8 +38,8 @@ footer {
   bottom: 0;
   overflow: auto;
   position: absolute;
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
 
 .buttons {
