@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memes</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>MEME GENERATOR</h1>
-    </header>
-    <section class="main-container">
-        <div class="input-text-container">
-            <label>Texto: <input type="text" id="text-input" size="60" maxlength="60"></label>            
-        </div>
-        <div class="input-photo-container">            
-            <input id='file' type='file' name='filename' hidden>
-            <label>Foto: <input id='meme-insert' type='button' value='Choose File'></label>
-            <label id="file-name">No file chosen</label>
-        </div>
-        <section id="meme-image-container">
-            <div id="meme-text"></div>
-            <div id="meme-image">
-                <img id="meme-image-id" alt="Imagem" src="">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memes</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>MEME GENERATOR</h1>
+        </header>
+        <section class="main-container">
+            <div class="input-text-container">
+                <label>Texto: <input type="text" class="text-input" id="text-input" size="60" maxlength="60"></label>
             </div>
-        </section>    
-    </section>
-    <script src="script.js"></script>
-</body>
+            <div class="input-photo-container">
+                <input id='file' type='file' name='filename' hidden>
+                <label>Foto: <input id='meme-insert' type='button' value='Choose File'></label>
+                <label id="file-name">No file chosen</label>
+            </div>
+            <section class="meme-image-container" id="meme-image-container">
+                <div class="meme-text" id="meme-text"></div>
+                <div class="meme-image" id="meme-image">
+                    <img id="meme-image-id" alt="Imagem" src="">
+                </div>
+            </section>
+            <div class="custom-styles-text">Estilos personalizados</div>
+            <div class="memes-buttons-container">
+                <button class="memes-buttons" id="fire">FOGO</button>
+                <button class="memes-buttons" id="water">ÁGUA</button>
+                <button class="memes-buttons" id="earth">TERRA</button>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+
 </html>
