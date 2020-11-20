@@ -8,7 +8,6 @@ const btnEarth = document.getElementById('earth');
 const inputFile = document.getElementById('file');
 const imgPhoto = document.getElementById('meme-image-id');
 const lblFileName = document.getElementById('file-name');
-const memeImgContainer = document.getElementById('meme-image-container');
 
 window.onload = function () {
   // Lista de  funções dos eventos dos objetos
@@ -28,15 +27,15 @@ window.onload = function () {
   }
 
   function fireBorder() {
-    memeImgContainer.style.border = '3px dashed red';
+    document.getElementById('meme-image-container').style.border = '3px dashed red';
   }
 
   function waterBorder() {
-    memeImgContainer.style.border = '5px double blue';
+    document.getElementById('meme-image-container').style.border = '5px double blue';
   }
 
   function earthBorder() {
-    memeImgContainer.style.border = '6px groove green';
+    document.getElementById('meme-image-container').style.border = '6px groove green';
   }
 
   // Lista de eventos dos objetos
