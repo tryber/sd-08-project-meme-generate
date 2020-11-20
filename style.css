@@ -69,3 +69,14 @@ img {
 #earth {
   background-color: green;
 }
+
+.memes-pre-loaded-container {
+  display: flex;
+}
+
+.memes-pre-loaded img {
+  cursor: pointer;
+  height: 60px;
+  margin-right: 10px;
+  width: 60px;
+}

@@ -38,6 +38,10 @@ window.onload = function () {
     document.getElementById('meme-image-container').style.border = '6px groove green';
   }
 
+  function setImagem(source) {
+    imgPhoto.src = source;
+  }
+
   // Lista de eventos dos objetos
   txtTexto.addEventListener('keyup', inputText);
   btnChooseFile.addEventListener('click', openDialog);
@@ -45,4 +49,10 @@ window.onload = function () {
   btnWater.addEventListener('click', waterBorder);
   btnEarth.addEventListener('click', earthBorder);
   inputFile.addEventListener('change', submitImage);
+
+  document.querySelectorAll(".memes-pre-loaded img").forEach((e) => {
+    e.addEventListener("click", (event) => {
+      setImagem(event.target.src);
+    });
+  });
 };
