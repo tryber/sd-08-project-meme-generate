@@ -6,7 +6,7 @@ const btnFire = document.getElementById('fire');
 const btnWater = document.getElementById('water');
 const btnEarth = document.getElementById('earth');
 const inputFile = document.getElementById('file');
-const imgPhoto = document.getElementById('meme-image-id');
+const imgPhoto = document.getElementById('meme-image');
 const lblFileName = document.getElementById('file-name');
 
 window.onload = function () {
