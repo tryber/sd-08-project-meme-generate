@@ -2,7 +2,7 @@
 // pode interagir para inserir texto em cima da imagem escolhida.
 function addText() {
   const textInput = document.querySelector('#text-input');
-  textInput.addEventListener('keyup', function() {
+  textInput.addEventListener('keyup', function () {
     const textMeme = document.querySelector('#meme-text');
     textMeme.innerHTML = textInput.value;
   });
@@ -18,6 +18,9 @@ function addImage() {
   });
 }
 addImage();
+
+// Requisito 06 - Permita a quem usa customizar o meme escolhido acrescentando a ele uma de três bordas.
+// A página deve ter três botões, que ao serem clicados devem cada um trocar a própria borda ao redor do container.
 
 function addBorderFire() {
   const btnBorder = document.querySelector('#fire');
@@ -45,3 +48,11 @@ function addBorderEarth() {
   });
 }
 addBorderEarth();
+
+function addimageMeme() {
+  const memeContainer = document.querySelector('.memes-prontos');
+  memeContainer.addEventListener('click', function (event) {
+    document.querySelector('#meme-image').src =  event.target.src;
+  });
+}
+addimageMeme();
