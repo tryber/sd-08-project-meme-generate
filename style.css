@@ -1,0 +1,78 @@
+html , body {
+  height: 100%;
+}
+
+.meme-image-container {
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  margin-top: 10px;
+  position: relative;
+  width: 400px;
+}
+
+.meme-image {
+  background-color: white;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.meme-text {
+  align-self: flex-end;
+  color: white;
+  font-size: 30px;
+  height: 100px;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+  position: absolute;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  width: 380px;
+}
+
+footer {
+  bottom: 0;
+  overflow: auto;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+
+}
+
+.buttons button {
+  height: 40px;
+  margin: 5px 0;
+  width: 120px;
+}
+
+.buttons img {
+  width: 30px;
+}
+
+.fire {
+  background-color: red;
+}
+
+.water {
+  background-color: blue;
+}
+
+.earth {
+  background-color: green;
+}
+
+.memes-prontos img {
+  border: 1px solid black;
+  height: 60px;
+  width: 60px;
+}
