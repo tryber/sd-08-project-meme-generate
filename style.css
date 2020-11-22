@@ -20,6 +20,7 @@ body , label , input , div , p {
 }
 
 .view #meme-image-container {
+  background-color: white;
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -29,7 +30,10 @@ body , label , input , div , p {
 
 .view #meme-text {
   align-self: center;
+  color: white;
+  font-size: 30px;
   position: absolute;
+  text-shadow: 5px 5px 5px black;
 }
 
 .view img {
