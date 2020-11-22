@@ -47,6 +47,7 @@ body , label , input , div , p {
 }
 
 .borders button {
+  color: white;
   margin: 0 5px;
   height: 100px;
   width: 100px;
@@ -62,4 +63,15 @@ body , label , input , div , p {
 
 .borders #earth {
   background-color: green;
+}
+
+.memes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.memes img {
+  height: 100px;
+  width: 100px;
 }

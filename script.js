@@ -53,3 +53,12 @@ function listeningButtons() {
   });
 }
 listeningButtons();
+function loadMeme() {
+  const memes = document.querySelectorAll('.memes img');
+  for (let index = 0; index < memes.length; index += 1) {
+    memes[index].addEventListener('click', function () {
+      memeImage.src = memes[index].src;
+    });
+  }
+}
+loadMeme();
