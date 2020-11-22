@@ -1,0 +1,37 @@
+body , label , input , div , p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.controls #text-input {
+  width: 50%;
+}
+
+.view {
+  display: flex;
+  padding: 10px;
+}
+
+.view #meme-image-container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 500px;
+}
+
+.view #meme-text {
+  align-self: center;
+  position: absolute;
+}
+
+.view img {
+  width: 100%;
+}
