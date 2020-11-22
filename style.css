@@ -1,0 +1,80 @@
+body , label , input , div , p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.controls {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.controls :nth-child( 3 ) {
+  margin: 5px 0;
+  width: 50%;
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.view div:first-child {
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  width: 50%;
+}
+
+.view p:first-child {
+  align-self: center;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  text-shadow: 5px 5px 5px black;
+}
+
+.view img {
+  width: 100%;
+}
+
+.borders {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.borders button {
+  color: white;
+  height: 100px;
+  margin: 0 5px;
+  width: 100px;
+}
+
+.borders :nth-child( 1 ) {
+  background-color: red;
+}
+
+.borders :nth-child( 2 ) {
+  background-color: blue;
+}
+
+.borders :nth-child( 3 ) {
+  background-color: green;
+}
+
+.memes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.memes img {
+  height: 100px;
+  width: 100px;
+}
