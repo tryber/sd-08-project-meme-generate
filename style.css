@@ -1,11 +1,7 @@
-body {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sBJy6K2lwQRiN1h7fvowfebsms9RERqNjw&usqp=CAU");
-  background-repeat: repeat, repeat;
-}
 .inputs-container {
+  align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
 }
 
 .inputs-container input {
@@ -18,13 +14,13 @@ body {
 }
 
 #meme-image-container img {
-  width: 400px;
+  border: 2px solid black;
   height: 400px;
-  border: 1px solid violet;
+  width: 400px;
 }
 
 #meme-text {
+  align-self: center;
   display: flex;
   position: absolute;
-  align-self: center;
 }
