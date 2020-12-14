@@ -1,0 +1,30 @@
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sBJy6K2lwQRiN1h7fvowfebsms9RERqNjw&usqp=CAU");
+  background-repeat: repeat, repeat;
+}
+.inputs-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.inputs-container input {
+  margin: 10px;
+}
+
+#meme-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+#meme-image-container img {
+  width: 400px;
+  height: 400px;
+  border: 1px solid violet;
+}
+
+#meme-text {
+  display: flex;
+  position: absolute;
+  align-self: center;
+}
