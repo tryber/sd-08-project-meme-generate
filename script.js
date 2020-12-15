@@ -6,3 +6,12 @@ const showText = () => {
   });
 };
 showText();
+
+const showImage = () => {
+  const image = document.getElementById('meme-insert');
+  image.addEventListener('change', function (event) {
+    const imageMeme = document.getElementById('meme-image');
+    imageMeme.src = URL.createObjectURL(event.target.files[0]);
+  });
+};
+showImage();
