@@ -15,3 +15,30 @@ const showImage = () => {
   });
 };
 showImage();
+
+const addBorderFire = () => {
+  const btn = document.getElementById('fire');
+  btn.addEventListener('click', function () {
+    const memeContainer = document.getElementById('meme-image-container');
+    memeContainer.style.border = '3px dashed red';
+  });
+};
+addBorderFire();
+
+const addBorderWater = () => {
+  const btn = document.getElementById('water');
+  btn.addEventListener('click', function () {
+    const memeContainer = document.getElementById('meme-image-container');
+    memeContainer.style.border = '5px double blue';
+  });
+};
+addBorderWater();
+
+const addBorderEarth = () => {
+  const btn = document.getElementById('earth');
+  btn.addEventListener('click', function () {
+    const memeContainer = document.getElementById('meme-image-container');
+    memeContainer.style.border = '6px groove green';
+  });
+};
+addBorderEarth();
