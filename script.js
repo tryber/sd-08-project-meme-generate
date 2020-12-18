@@ -42,3 +42,11 @@ const addBorderEarth = () => {
   });
 };
 addBorderEarth();
+
+const addMemePrePronto = () => {
+  const meme = document.querySelector('.memes-prontos');
+  meme.addEventListener('click', function (event) {
+    document.getElementById('meme-image').src = event.target.src;
+  });
+};
+addMemePrePronto();
