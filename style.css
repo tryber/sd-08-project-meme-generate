@@ -1,0 +1,49 @@
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.meme-image-container {
+  background-color: white;
+  border: 1px solid black;
+  height: 400px;
+  position: relative;
+  width: 400px;
+}
+
+.meme-image {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.meme-text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  text-shadow: 5px 5px 5px black;
+}
+
+.fire {
+  background-color: red;
+  border: 3px dashed black;
+  border-radius: 30%;
+}
+
+.water {
+  background-color: blue;
+  border: 5px double black;
+  border-radius: 30%;
+}
+
+.earth {
+  background-color: green;
+  border: 6px groove black;
+  border-radius: 30%;
+}
+
+.memes-prontos img {
+  height: 70px;
+  padding: 15px;
+  width: 70px;
+}
