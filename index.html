@@ -1,0 +1,57 @@
+<!-- A solução de pré-visualização da imagem carregada no 'input file' foi adaptada de 'https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977' -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generate Project</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Finger+Paint&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>
+      Meme Generator
+    </h1>
+  </header>
+  <main>
+    <section>
+      <h2>Monte aqui o seu meme: </h2>
+      <form>
+        <div>
+          <label for="meme-text-input">Texto: </label>
+        <input type="text" maxlength="60" name="meme-text-input" id="text-input" class="text-input">
+        </div>
+        <div>
+          <label for="meme-image-input">Foto: </label>
+        <input type="file" name="meme-image-input" id="meme-insert" accept="image/*">
+        </div>
+      </form>
+      <div id="meme-image-container" class="meme-image-container">
+        <img id="meme-image" class="meme-image"/>
+        <p id="meme-text" class="meme-text"></p>
+      </div>
+    </section>
+    <section id="buttons">
+      <fieldset>
+        <legend> Escolha a cor da borda do meme </legend>
+          <button id="fire" class="fire">Vermelho</button>
+          <button id="water" class="water">Azul</button>
+          <button id="earth" class="earth">Verde</button>
+      </fieldset>
+    </section>
+    <section>
+      <h2>Memes rápidos: </h2>
+      <div class="meme-galery">
+        <div id="meme-1" class="mini-meme"><img src="./imgs/meme1.png" alt=""></div>
+        <div id="meme-2" class="mini-meme"><img src="./imgs/meme2.png" alt=""></div>
+        <div id="meme-3" class="mini-meme"><img src="./imgs/meme3.png" alt=""></div>
+        <div id="meme-4" class="mini-meme"><img src="./imgs/meme4.png" alt=""></div>
+      </div>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
