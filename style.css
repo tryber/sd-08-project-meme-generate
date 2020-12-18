@@ -107,7 +107,7 @@ button {
   font-family: Alegreya Sans SC, sans-serif;
   font-size: 18px;
   font-weight: 700;
-  opacity: 0.7;
+  opacity: 0.6;
   padding: 8px 15px;
 }
 
@@ -132,7 +132,7 @@ legend {
 }
 
 .earth {
-  background-color: lime;
+  background-color: green;
 }
 
 .earth:hover {
