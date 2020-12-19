@@ -21,7 +21,7 @@
 
 .meme-text {
   align-self: flex-end;
-  margin-bottom: 25px;
   display: flex;
+  margin-bottom: 25px;
   position: absolute;
 }
