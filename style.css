@@ -8,19 +8,20 @@
   margin: 10px;
 }
 
-#meme-image-container {
+.meme-image-container {
   display: flex;
   justify-content: center;
 }
 
-#meme-image-container img {
+.meme-image-container img {
   border: 2px solid black;
   height: 400px;
   width: 400px;
 }
 
-#meme-text {
-  align-self: center;
+.meme-text {
+  align-self: flex-end;
+  margin-bottom: 25px;
   display: flex;
   position: absolute;
 }

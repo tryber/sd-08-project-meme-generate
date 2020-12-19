@@ -1,12 +1,10 @@
-const showBtn = document.querySelector("#show-image");
-const memeImage = document.querySelector("#meme-image");
+const memeImage = document.querySelector('#meme-image');
+const textInput = document.querySelector('#text-input');
+memeImage.addEventListener('change', () => {
+  document.querySelector('#blah').src = URL.createObjectURL(memeImage.files[0]);
+});
 
-// showBtn.addEventListener("click", (event) => {
-//   const doidera = document.querySelector("#meme-container");
-//   memeImage.src = URL.createObjectURL(event.target.files[0]);
-// });
-
-memeImage.addEventListener("change", (e) => {
-  document.querySelector("#blah").src = URL.createObjectURL(memeImage.files[0]);
-  document.querySelector("#blah").style.display = "block";
+textInput.addEventListener('keyup', () => {
+  const memeText = document.querySelector('#meme-text');
+  memeText.innerHTML = textInput.value;
 });
