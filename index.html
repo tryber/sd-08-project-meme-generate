@@ -11,13 +11,18 @@
   <body>
     <section class='inputs-container'>
       <h1>Meme Generator</h1>
-      <input type="text" name="meme-text" id="text-input" placeholder="Digite seu texto">
+      <input type="text" name="meme-text" maxlength="60" id="text-input" placeholder="Digite seu texto">
       <input type="file" name="upload" accept="image/*" id='meme-insert'>
     </section>
     <div id="meme-image-container" class='meme-image-container'>
-      <div id="meme-text" class='meme-text'></div>
+      <p id="meme-text" class='meme-text'></p>
       <img alt="image" id='meme-image' class='meme-image'>
     </div>
+    <section class=for-borders>
+      <button class="border" id='fire'></button>
+      <button class="border" id='water'></button>
+      <button class="border" id='earth'></button>
+    </section>
     <script src="script.js"></script>
   </body>
 

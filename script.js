@@ -1,12 +1,25 @@
 const memeImage = document.querySelector('#meme-insert');
 const textInput = document.querySelector('#text-input');
+const borders = document.querySelectorAll('.border');
 memeImage.addEventListener('change', () => {
-  document.querySelector('#meme-image').src = URL.createObjectURL(
-    memeImage.files[0]
-  );
+  const selectImage = memeImage.files[0];
+  document.querySelector('#meme-image').src = URL.createObjectURL(selectImage);
 });
 
 textInput.addEventListener('keyup', () => {
   const memeText = document.querySelector('#meme-text');
   memeText.innerHTML = textInput.value;
+});
+
+borders.forEach((element) => {
+  element.addEventListener('click', () => {
+    const myImage = document.querySelector('#meme-image-container');
+    if (element.id === 'fire') {
+      myImage.style.border = '3px dashed red';
+    } else if (element.id === 'water') {
+      myImage.style.border = '5px double blue';
+    } else {
+      myImage.style.border = '6px groove green';
+    }
+  });
 });

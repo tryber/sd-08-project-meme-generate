@@ -9,13 +9,13 @@
 }
 
 .meme-image-container {
+  background-color: white;
   border: 1px solid black;
   display: flex;
   height: 400px;
   justify-content: center;
   margin: auto;
   width: 400px;
-  background-color: white;
 }
 
 .meme-image-container img {
@@ -31,4 +31,34 @@
   margin-bottom: 25px;
   position: absolute;
   text-shadow: 5px 5px 5px black;
+  width:300px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.border {
+  height: 100px;
+  margin-right: 10px;
+  outline: none;
+  width: 100px;
+}
+
+.border:nth-child(1) {
+  background-color: red;
+  border: 3px dashed red;
+}
+.border:nth-child(2) {
+  background-color: blue;
+  border: 5px double blue;
+}
+
+.border:nth-child(3) {
+  background-color: green;
+  border: 6px groove green;
+}
+
+.for-borders {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
