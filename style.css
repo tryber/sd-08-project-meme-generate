@@ -9,19 +9,25 @@
 }
 
 .meme-image-container {
+  border: 1px solid black;
   display: flex;
+  height: 400px;
   justify-content: center;
+  margin: auto;
+  width: 400px;
 }
 
 .meme-image-container img {
-  border: 2px solid black;
   height: 400px;
   width: 400px;
 }
 
 .meme-text {
   align-self: flex-end;
+  color: white;
   display: flex;
+  font-size: 30px;
   margin-bottom: 25px;
   position: absolute;
+  text-shadow: 5px 5px 5px black;
 }
