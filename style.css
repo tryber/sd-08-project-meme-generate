@@ -31,28 +31,32 @@
   margin-bottom: 25px;
   position: absolute;
   text-shadow: 5px 5px 5px black;
-  width:300px;
-  word-wrap: break-word;
   white-space: normal;
+  width: 300px;
+  word-wrap: break-word;
 }
 
 .border {
   height: 100px;
   margin-right: 10px;
-  outline: none;
   width: 100px;
 }
 
-.border:nth-child(1) {
+.border:focus {
+  outline: none;
+}
+
+.border:nth-child( 1 ) {
   background-color: red;
   border: 3px dashed red;
 }
-.border:nth-child(2) {
+
+.border:nth-child( 2 ) {
   background-color: blue;
   border: 5px double blue;
 }
 
-.border:nth-child(3) {
+.border:nth-child( 3 ) {
   background-color: green;
   border: 6px groove green;
 }
