@@ -26,6 +26,8 @@ buttonsContainer.addEventListener('click', (event) => {
     case 'earth':
       memeContainer.style.border = '6px groove green';
       break;
+    default:
+      break;
   }
 });
 
