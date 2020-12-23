@@ -58,8 +58,7 @@
   border: 6px groove green;
 }
 
-.for-borders ,
-.random-memes {
+.for-borders , .random-memes {
   display: flex;
   justify-content: center;
   margin-top: 20px;
