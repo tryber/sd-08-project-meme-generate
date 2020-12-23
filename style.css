@@ -42,26 +42,23 @@
   width: 100px;
 }
 
-.border:focus {
-  outline: none;
-}
 
-.border:nth-child(1) {
+.border:nth-child( 1 ) {
   background-color: red;
   border: 3px dashed red;
 }
 
-.border:nth-child(2) {
+.border:nth-child( 2 ) {
   background-color: blue;
   border: 5px double blue;
 }
 
-.border:nth-child(3) {
+.border:nth-child( 3 ) {
   background-color: green;
   border: 6px groove green;
 }
 
-.for-borders,
+.for-borders, 
 .random-memes {
   display: flex;
   justify-content: center;
@@ -74,7 +71,7 @@
   margin-left: 20px;
   padding: 2px;
   transition: 250ms;
-  width:100px;
+  width: 100px;
 }
 
 .meme:hover {

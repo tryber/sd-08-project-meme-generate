@@ -27,7 +27,6 @@ borders.forEach((element) => {
 
 memes.forEach((meme) => {
   meme.addEventListener('click', (event) => {
-    console.log(event.target.src);
     document.querySelector('#meme-image').src = event.target.src;
   });
 });
