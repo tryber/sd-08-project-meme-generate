@@ -1,6 +1,7 @@
 const memeImage = document.querySelector('#meme-insert');
 const textInput = document.querySelector('#text-input');
 const borders = document.querySelectorAll('.border');
+const memes = document.querySelectorAll('#memes');
 memeImage.addEventListener('change', () => {
   const selectImage = memeImage.files[0];
   document.querySelector('#meme-image').src = URL.createObjectURL(selectImage);
@@ -21,5 +22,12 @@ borders.forEach((element) => {
     } else {
       myImage.style.border = '6px groove green';
     }
+  });
+});
+
+memes.forEach((meme) => {
+  meme.addEventListener('click', (event) => {
+    console.log(event.target.src);
+    document.querySelector('#meme-image').src = event.target.src;
   });
 });
