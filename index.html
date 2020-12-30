@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Meme</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>MEME GENERATOR</h1>
+  <label for="text-input">Texto: </label>
+  <input type="text" maxlength="60" id="text-input" class="text-input" placeholder="Digite o texto do seu meme">
+  <label for="meme-insert">Upload: </label>
+  <input type="file" accept="image/*" id="meme-insert" class="meme-insert">
+  <div id="meme-image-container" class='meme-image-container'>
+    <div id="meme-text" class='meme-text'></div>
+    <img alt="Imagem a ser carregada..." id='meme-image' class='meme-image'>
+  </div>
+  <div id="buttons" class="buttons">
+    <button class="border fire" id='fire'>FIRE</button>
+    <button class="border water" id='water'>WATER</button>
+    <button class="border earth" id='earth'>EARTH</button>
+  </div>
+  <div class="memes-prontos">
+    <img id="meme-1" class="meme" src="imgs/meme1.png" alt="Meme do Faustao Feliz/Triste">
+    <img id="meme-2" class="meme" src="imgs/meme2.png" alt="Meme dog acordando">
+    <img id="meme-3" class="meme" src="imgs/meme3.png" alt="Meme gato assustado">
+    <img id="meme-4" class="meme" src="imgs/meme4.png" alt="Meme Trump">
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

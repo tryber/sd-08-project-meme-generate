@@ -1,0 +1,97 @@
+body {
+  background-color: darkgreen;
+}
+
+h1 {
+  color: orange;
+  display: flex;
+  justify-content: center;
+}
+
+.meme-insert {
+  margin-top: 30px;
+}
+
+.text-input {
+  width: 95%;
+}
+
+.meme-image-container {
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 450px;
+}
+
+.meme-text {
+  align-self: flex-end;
+  background-color: tomato;
+  color: white;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  position: absolute;
+  text-shadow: 5px 5px 5px black;
+  width: 450px;
+}
+
+.meme-image-container img {
+  height: 300px;
+  width: 450px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.fire {
+  background-color: red;
+  padding: 10px;
+}
+
+.water {
+  background-color: blue;
+  padding: 10px;
+}
+
+.earth {
+  background-color: green;
+  padding: 10px;
+}
+
+.meme {
+  height: 100px;
+  margin-top: 20px;
+  width: 100px;
+}
+
+.memes-prontos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.meme:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.fire:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.water:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.earth:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
