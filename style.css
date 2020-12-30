@@ -13,7 +13,7 @@ h1 {
 }
 
 .text-input {
-  width: 90%;
+  width: 95%;
 }
 
 .meme-image-container {
@@ -42,4 +42,25 @@ h1 {
 .meme-image-container img {
   height: 300px;
   width: 450px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#fire {
+  background-color: red;
+  padding: 10px;
+}
+
+#water {
+  background-color: blue;
+  padding: 10px;
+}
+
+#earth {
+  background-color: green;
+  padding: 10px;
 }
