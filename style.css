@@ -64,3 +64,34 @@ h1 {
   background-color: green;
   padding: 10px;
 }
+
+.meme {
+  height: 100px;
+  margin-top: 20px;
+  width: 100px;
+}
+
+.memes-prontos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.meme:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.fire:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.water:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.earth:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
