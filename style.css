@@ -1,0 +1,51 @@
+body {
+  background-color: darkgreen;
+}
+
+h1 {
+  color: orange;
+  display: flex;
+  justify-content: center;
+}
+
+.meme-insert {
+  margin-top: 30px;
+}
+
+.meme-text {
+  display: flex;
+  justify-content: center;
+}
+
+.text-input {
+  width: 90%;
+}
+
+.meme-image-container {
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 450px;
+}
+
+.meme-text {
+  align-self: flex-end;
+  background-color: tomato;
+  color: white;
+  display: flex;
+  font-size: 30px;
+  position: absolute;
+  text-shadow: 5px 5px 5px black;
+  width: 450px;
+}
+
+.meme-image-container img {
+  height: 300px;
+  width: 450px;
+}
+
+
