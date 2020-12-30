@@ -50,17 +50,17 @@ h1 {
   margin-top: 20px;
 }
 
-#fire {
+.fire {
   background-color: red;
   padding: 10px;
 }
 
-#water {
+.water {
   background-color: blue;
   padding: 10px;
 }
 
-#earth {
+.earth {
   background-color: green;
   padding: 10px;
 }
